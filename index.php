@@ -11,8 +11,8 @@
     <a href="#contact">Warenkorb</a>
     <a href="#about">Anmelden</a>
 </div>
-Hallo, dass ist ein neuer Text <br>
-hier geht es weiter
+<p>Hallo, dass ist ein neuer Text <br>
+hier geht es weiter</p>
 
 
 </body>
