@@ -9,51 +9,54 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mystyle.css">
 </head>
 <body>
 
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" href="#">Handy Webshop</a>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav col-md-12">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-<h1 class="font-weight-bold text-center">Ein Shop alle Marken!</h1>
+<div class="topnav" id="myTopnav">
+    <a href="#home">Logo</a>
+    <a href="#news">Suche</a>
+    <a href="#contact">Warenkorb</a>
+    <a href="#about">Anmelden</a>
+</div>
+<br>
+<br>
 <br>
 <br>
 
-<div class="container">
+<div id="brandcontain" class="container">
     <div class="row">
-        <div class="col-md-2">
-            <img src="jpg/lg.jpg">
-</div>
+        <div class="col-md-3 offset-md-1">
+            <a href="#"><img id="brand" src="jpg/lg.jpg" alt="LG" class="img-thumbnail"></a>
+        </div>
+
+        <div class="col-md-3">
+            <a href="#"><img id="brand" src="jpg/motorola.jpg" alt="Motorola" class="img-thumbnail"></a>
+        </div>
+
+        <div class="col-md-3">
+            <a href="#"><img id="brand" src="jpg/google.jpg" alt="Google" class="img-thumbnail"></a>
+        </div>
+        </div>
+    <br>
+    <div class="row">
+        <div class="col-md-3 offset-md-1">
+            <a href="#"><img id="brand" src="jpg/huawei.jpg" alt="Huawei" class="img-thumbnail"></a>
+        </div>
+
+        <div class="col-md-3">
+            <a href="#"><img id="brand" src="jpg/samsung.jpg" alt="Samsung" class="img-thumbnail"></a>
+        </div>
+
+        <div class="col-md-3">
+            <a href="#"><img id="brand" src="jpg/apple.jpg" alt="Apple" class="img-thumbnail"></a>
+        </div>
     </div>
 
 
-
-
-
-
-
-
-</div>
+    <div class="footer" id="myfooter">
+        <a href="#home">Impressum</a>
+    </div>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
