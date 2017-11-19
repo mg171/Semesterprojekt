@@ -20,7 +20,7 @@
         echo '<a href="index.php">Startseite</a>';
         echo '<a href="index.php?page=login&action=login"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>';
 
-   
+
     ?>
 
 
@@ -47,10 +47,8 @@ else
 
 ?>
 
-
-
 </body>
 
-<br><br><footer class="footer">Made @HdM by Lena, Marcel & Monique</footer>
+<footer class="footer">Made @HdM by Lena, Marcel & Monique</footer>
 
 </html>
