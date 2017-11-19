@@ -49,7 +49,6 @@ if ($_GET["category"] == "samsung") {
         echo "</div>";
         echo "</div>";
     }
-
 }
 
 
@@ -75,7 +74,6 @@ if ($_GET["category"] == "google") {
         echo "</div>";
         echo "</div>";
     }
-
 }
 
 
@@ -101,7 +99,6 @@ if ($_GET["category"] == "huawei") {
         echo "</div>";
         echo "</div>";
     }
-
 }
 
 
@@ -127,7 +124,6 @@ if ($_GET["category"] == "motorola") {
         echo "</div>";
         echo "</div>";
     }
-
 }
 
 
@@ -153,7 +149,6 @@ if ($_GET["category"] == "lg") {
         echo "</div>";
         echo "</div>";
     }
-
 } ?>
 
 </div>
