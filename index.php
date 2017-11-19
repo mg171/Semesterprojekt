@@ -2,24 +2,55 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="system/design/design.css" media="screen"/>
+    <title>Onlineshop</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen"/>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/2ab6c8da3b.js"></script>
 </head>
+
 <body>
-<div class="topnav" id="myTopnav">
-    <a href="#home">Logo</a>
-    <a href="#news">Suche</a>
-    <a href="#contact">Warenkorb</a>
-    <a href="#about">Anmelden</a>
-</div>
+
+
 <br>
-<p>Hallo, dass ist ein neuer Text <br>
-hier geht es weiter</p>
+<div class="navbar">
+
+    <?php
+
+        echo '<img src="images/logo/logo_navbar.jpg" alt="Logo">';
+        echo '<a href="index.php">Startseite</a>';
+        echo '<a href="index.php?page=login&action=login"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>';
+
+   
+    ?>
+
+
+</div>
+
 
 <?php
 
-echo"Hallo Welt";
+if (isset($_GET["page"]) ) {
+    switch ($_GET["page"]) {
+        case "category":
+            include "category/index.php";
+            break;
+        default:
+            include "start.php";
+            break;
+    }
+}
+else
+{
+    include "start.php";
+}
+
 
 ?>
 
 
+
 </body>
+
+<br><br><footer class="footer">Made @HdM by Lena, Marcel & Monique</footer>
+
+</html>
