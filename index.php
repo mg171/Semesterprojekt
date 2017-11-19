@@ -34,6 +34,9 @@ if (isset($_GET["page"]) ) {
         case "category":
             include "category/index.php";
             break;
+        case "login":
+            include "login/login.php";
+            break;
         default:
             include "start.php";
             break;

@@ -234,3 +234,18 @@ img#singlephone {
     transition: all 0.2s ease-in-out;
     max-width: 100%;
     height: auto;  }
+
+/* Login Style*/
+form {
+    border: 3px solid #f1f1f1;
+    margin: 150px;
+}
+
+input[type=text], input[type=password], input[type=submit] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
