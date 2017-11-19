@@ -20,7 +20,7 @@ body, html {
     width: 100%;
     border-top: 1px solid #e7e7e7;
     color: #262626;
-    font-size: 12pt;  }
+    font-size: 8pt;  }
 
 h1 {
     font-weight: 300;
@@ -137,7 +137,21 @@ a {
 
 /* Dropdown Menüpunkt Ende */
 
-/* Hover Productshots Anfang */
+/* Productshots + Hover Anfang */
+
+#grid {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 1px solid grey;  }
+
+#singlephone {
+    float:left;
+    margin: 0 5% 0 0;  }
+
+img#singlephone {
+    height: 250px;
+    width: 250px;  }
 
 .hovereffect {
     width: 250px;
@@ -195,7 +209,7 @@ a {
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0); }
 
-/* Hover Productshots Ende */
+/* Productshots + Hover Ende */
 
 
 #homewrapper {
