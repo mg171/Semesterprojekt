@@ -1,11 +1,11 @@
 <?php
 
-$dsn="mysql:: host=mars.iuk.hdm-stuttgart.de; dbname=u-lp055"; //wo der Server bzw. die Datenbank zu finden ist
+include_once ("db/userdata.php");
 
 try
 
 {
-    $db = new PDO($dsn, 'lp055', 'eeshoh2ieV', array('charset'=>'utf8'));
+    $db = new PDO($dsn, $dbuser, $dbpass);
 }
 
 catch (PDOException $p)
