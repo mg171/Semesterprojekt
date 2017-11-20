@@ -46,6 +46,10 @@ td {
 a {
     text-decoration: none; }
 
+p {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;  }
+
 /* Navigationsleiste */
 
 
