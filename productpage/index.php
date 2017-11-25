@@ -3,7 +3,7 @@ if (isset($_GET["product"]))
 {
     switch ($_GET["product"]) {
         case "show":
-            include "productpage/show.php";
+            include "show.php";
             break;
         default:
             echo "Die Seite wurde nicht gefunden";
