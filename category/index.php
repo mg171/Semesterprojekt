@@ -21,11 +21,11 @@ if (isset($_GET["category"]))
             include "show.php";
             break;
         default:
-            echo "Die Seite wurde nicht gefunden";
+            echo "Die Seite wurde nicht gefunden.";
             die();
             break;
     }
 } else {
-    echo "Die Seite wurde nicht gefunden";
+    echo "Die Seite existiert nicht.";
 }
 ?>
