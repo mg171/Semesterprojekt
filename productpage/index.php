@@ -1,7 +1,16 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Monique
- * Date: 25.11.17
- * Time: 10:45
- */
+if (isset($_GET["product"]))
+{
+    switch ($_GET["product"]) {
+        case "show":
+            include "productpage/show.php";
+            break;
+        default:
+            echo "Die Seite wurde nicht gefunden";
+            die();
+            break;
+    }
+} else {
+    echo "Diese Seite existiert nicht.";
+}
+?>
