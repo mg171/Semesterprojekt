@@ -37,6 +37,9 @@ if (isset($_GET["page"]) ) {
         case "login":
             include "login/login.php";
             break;
+        case "product":
+            include "productpage/index.php";
+            break;
         default:
             include "start.php";
             break;
