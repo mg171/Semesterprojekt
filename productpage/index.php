@@ -13,4 +13,4 @@ if (isset($_GET["product"]))
 } else {
     echo "Diese Seite existiert nicht.";
 }
-?>
+
