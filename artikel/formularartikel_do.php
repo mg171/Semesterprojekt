@@ -1,8 +1,6 @@
 <?php
 
-include_once ("db/userdata.php");
-
-try
+require_once dirname(__FILE__).'/../db/userdata.php';
 
 {
     $db = new PDO($dsn, $dbuser, $dbpass);
@@ -13,11 +11,12 @@ catch (PDOException $p)
 {
 
     echo ("Fehler bei Aufbau der Datenbankverbindung.");
+    die();
 }
 
-echo ($_POST["produkt"]);
+//echo ($_POST["artikelname"]);
 
-$stmt = $db->prepare("INSERT INTO produkt (produkt_id, artikelname, marke_id, beschreibung, preis, bild, 
+$stmt = $db->prepare ("INSERT INTO produkt (id, artikelname, marke_id, beschreibung, preis, bild, 
 menge, mindestbestand, eancode) VALUES('', :artikelname, :marke_id, :beschreibung, :preis, :bild, :menge, 
 :mindestbestand, :eancode)");
 $stmt->bindParam('artikelname', $_POST["artikelname"]);
