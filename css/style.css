@@ -250,9 +250,9 @@ input[type="submit"]:hover {background: #4c6faf; color: #FFF;}
 
 /* Login Style */
 
-form {
+/* form {
     border: 3px solid #f1f1f1;
-    margin: 150px;  }
+    margin: 150px;  } */
 
 input[type=text], input[type=password], input[type=submit] {
     width: 100%;
