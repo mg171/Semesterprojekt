@@ -37,6 +37,11 @@ h1 {
     margin-left: 5%;
     margin-right: 5%; }
 
+h2 {
+    font-weight: 200;
+    font-size: 24px;  }
+
+
 .bold {
     font-weight: 500; }
     
