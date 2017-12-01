@@ -1,3 +1,4 @@
+<div id="homewrapper">
 <?php
 echo "<form action='index.php?page=login&action=logincheck' method='post'>
 <input type='text' name='login' placeholder='E-Mail Adresse'>
@@ -5,4 +6,4 @@ echo "<form action='index.php?page=login&action=logincheck' method='post'>
 <input type='submit'>
 </form>";
 ?>
-
+</div>
