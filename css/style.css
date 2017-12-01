@@ -212,6 +212,13 @@ img#pagephone {
     max-width: 100%;
     height: auto;  }
 
+.preis {
+    font-size: 18px;
+    font-weight: 800; }
+
+.productinfo {
+    font-size: 12px; }
+
 /* Login Style */
 
 form {
