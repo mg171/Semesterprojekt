@@ -17,8 +17,10 @@
     <?php
 
         echo '<img src="images/logo/logo_navbar.jpg" alt="Logo">';
+        echo '<div class="navbarmiddle">';
         echo '<a href="index.php">Startseite</a>';
         echo '<a href="index.php?page=login&action=login"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>';
+        echo '</div>';
 
 
     ?>
