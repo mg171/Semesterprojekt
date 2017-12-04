@@ -28,7 +28,8 @@ $stmt->bindParam(":bild", $_FILES["bild"]);
 $stmt->bindParam(":menge", $_POST["menge"]);
 $stmt->bindParam(":mindestbestand", $_POST["mindestbestand"]);
 $stmt->bindParam(":eancode", $_POST["eancode"]);
-$stmt->execute();
-
+if(!$stmt->execute()){
+    echo("fehler");
+}
 
 ?>
