@@ -21,7 +21,7 @@ $stmt = $db->prepare ("INSERT INTO produkt (id, artikelname, marke_id, beschreib
 menge, mindestbestand, eancode) VALUES ('', :artikelname, :marke_id, :beschreibung, :preis, :bild, :menge, 
 :mindestbestand, :eancode)");
 $stmt->bindParam(":artikelname", $_POST["artikelname"]);
-$stmt->bindParam(":marke", $_POST["marke"]);
+$stmt->bindParam(":marke_id", $_POST["marke"]);
 $stmt->bindParam(":beschreibung", $_POST["beschreibung"]);
 $stmt->bindParam(":preis", $_POST["preis"]);
 $stmt->bindParam(":bild", $_POST["bild"]);
