@@ -23,12 +23,12 @@ stadt, land, plz) VALUES ('', :vorname, :nachname, :email, :telfonnummer, :stras
 $stmt->bindParam(":vorname", $_POST["vorname"]);
 $stmt->bindParam(":nachname", $_POST["nachname"]);
 $stmt->bindParam(":email", $_POST["email"]);
-$stmt->bindParam(":telefonummer", $_POST["telefonnummer"]);
+$stmt->bindParam(":telefonnummer", $_POST["telefonnummer"]);
 $stmt->bindParam(":strasse", $_POST["strasse"]);
 $stmt->bindParam(":hausnummer", $_POST["hausnummer"]);
 $stmt->bindParam(":stadt", $_POST["stadt"]);
 $stmt->bindParam(":land", $_POST["land"]);
-$stmt->bindParam(":plz", $_POST["land"]);
+$stmt->bindParam(":plz", $_POST["plz"]);
 $stmt->execute();
 
 /*if(!$stmt->execute()){
