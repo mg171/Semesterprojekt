@@ -29,9 +29,11 @@ $stmt->bindParam(":hausnummer", $_POST["hausnummer"]);
 $stmt->bindParam(":stadt", $_POST["stadt"]);
 $stmt->bindParam(":land", $_POST["land"]);
 $stmt->bindParam(":plz", $_POST["land"]);
-if(!$stmt->execute()){
+$stmt->execute();
+
+/*if(!$stmt->execute()){
     echo("fehler");
     print_r($db->errorInfo());
 }
-
+*/
 ?>
