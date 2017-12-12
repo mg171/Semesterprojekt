@@ -43,6 +43,9 @@ if (isset($_GET["page"]) ) {
         case "product":
             include "productpage/index.php";
             break;
+        case  "warenkorb":
+            include "warenkorb/index.php";
+            break;
         default:
             include "start.php";
             break;
