@@ -1,7 +1,10 @@
 <?php
+
+session_start();
+
 if (isset($_POST["login"]) AND isset($_POST["password"]))
 {
-
+    include "db/userdata.php";
     $password=md5($_POST["password"]);
     $stmt=$db->prepare("SELECT * FROM user WHERE login=:login AND password=:password");
     $stmt->bindParam(":login", $_POST["login"]);
