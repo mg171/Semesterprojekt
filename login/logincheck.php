@@ -34,3 +34,8 @@ else
 {
     echo "Fehler- zu wenig Parameter";
 }
+
+if(!$stmt->execute()){
+    echo("fehler");
+    print_r($db->errorInfo());
+}
