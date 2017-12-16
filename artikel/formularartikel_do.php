@@ -15,7 +15,10 @@ catch (PDOException $p)
     die();
 }
 
-//echo ($_POST["artikelname"]);
+
+$bild = $_FILES['bild']['name'];
+
+move_uploaded_file($_FILES['bild']['tmp_name'],'../images/productshots/' . $_FILES['bild']['name']);
 
 $stmt = $db->prepare ("INSERT INTO produkt (id, artikelname, marke_id, beschreibung, preis, bild, 
 menge, mindestbestand, eancode) VALUES ('', :artikelname, :marke_id, :beschreibung, :preis, :bild, :menge, 
@@ -24,10 +27,13 @@ $stmt->bindParam(":artikelname", $_POST["artikelname"]);
 $stmt->bindParam(":marke_id", $_POST["marke_id"]);
 $stmt->bindParam(":beschreibung", $_POST["beschreibung"]);
 $stmt->bindParam(":preis", $_POST["preis"]);
-$stmt->bindParam(":bild", $_POST["bild"]);
+$stmt->bindParam(":bild", $_FILES['bild']['name']);
 $stmt->bindParam(":menge", $_POST["menge"]);
 $stmt->bindParam(":mindestbestand", $_POST["mindestbestand"]);
 $stmt->bindParam(":eancode", $_POST["eancode"]);
+
+
+
 if(!$stmt->execute()){
     echo("fehler");
     print_r($db->errorInfo());

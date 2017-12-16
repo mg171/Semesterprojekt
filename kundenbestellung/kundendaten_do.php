@@ -15,10 +15,9 @@ catch (PDOException $p)
     die();
 }
 
-//echo ($_POST["artikelname"]);
 
 $stmt = $db->prepare ("INSERT INTO kunden (kunden_id, vorname, nachname, email, telefonnummer, strasse, hausnummer,
-stadt, land, plz) VALUES ('', :vorname, :nachname, :email, :telfonnummer, :strasse, :hausnummer, 
+stadt, land, plz) VALUES ('', :vorname, :nachname, :email, :telefonnummer, :strasse, :hausnummer, 
 :stadt, :land, :plz)");
 $stmt->bindParam(":vorname", $_POST["vorname"]);
 $stmt->bindParam(":nachname", $_POST["nachname"]);
