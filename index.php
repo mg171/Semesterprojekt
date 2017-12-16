@@ -61,6 +61,6 @@ else
 
 </body>
 
-<footer class="footer">Made @HdM by Lena, Marcel & Monique</footer>
+
 
 </html>
