@@ -17,12 +17,13 @@ if ($_GET["product"] == "show") {
         echo "<div class='preis'>" . $row['preis'] . " €" . "</div><br><br>";
         echo "<div class='productinfo'>Eancode: " . $row['eancode'] . "<br><br>";
         echo $row['beschreibung'] . "<br></div>";
-        echo "</div><br><br>"; ?>
-        <form action="index.php?page=cart" method="post">
-            <input class="anzahl" type="number" name="anzahl" min="1" max="9" step="1" value="1">
-            <input class="warenkorb" type="submit" value="In den Einkaufswagen">
-        </form>
-        <?php
+        echo "</div><br><br>";
+        echo "
+        <form action='index.php?page=warenkorb&action=update&id=".$row['id']."' method='post'>
+            <input class='anzahl' type='number' name='anzahl' min='1' max='9' step='1' value='1'>
+            <input class='warenkorb' type='submit' value='In den Einkaufswagen'>
+        </form>";
+
 
     }
 
