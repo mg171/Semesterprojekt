@@ -6,6 +6,9 @@ if (isset($_GET["warenkorb"]))
         case "show":
             include "warenkorb/show.php";
             break;
+        case "hinzufuegen":
+            include "warenkorb/hinzufuegen.php";
+            break;
         case "update":
             include "warenkorb/update.php";
             break;
