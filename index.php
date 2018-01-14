@@ -20,7 +20,7 @@
         echo '<div class="navbarmiddle">';
         echo '<a href="index.php">Startseite</a>';
         echo '<a href="index.php?page=login&action=login"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>';
-        echo '<a href="index.php?page=warenkorb&warenkorb=show"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Warenkorb</a>';
+        echo '<a href="index.php?page=warenkorb"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Warenkorb</a>';
         echo '</div>';
 
 
@@ -38,7 +38,7 @@ if (isset($_GET["page"]) ) {
             include "category/index.php";
             break;
         case "login":
-            include "login/login1.php";
+            include "login/login.php";
             break;
         case "product":
             include "productpage/index.php";

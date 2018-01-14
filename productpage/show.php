@@ -19,9 +19,9 @@ if ($_GET["product"] == "show") {
         echo $row['beschreibung'] . "<br></div>";
         echo "</div><br><br>";
         ?>
-        <form action='index.php?page=warenkorb&warenkorb=hinzufuegen' method='post'>
+        <form action='./warenkorb/hinzufuegen.php' method='post'>
             <input class='anzahl' type='number' name='anzahl' min='1' max='9' step='1' value='1'>
-            <input type='hidden' name='produkt' value='<?php echo $result["id"]; ?>'>
+            <input type='hidden' name='produktid' value='<?php echo $result["id"]; ?>'>
             <input class='warenkorb' type='submit' value='In den Einkaufswagen'>
         </form>
 
