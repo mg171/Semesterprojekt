@@ -1,4 +1,4 @@
-<div id='productwrapper'>
+<div id='cartwrapper'>
 
 <?php
 session_start();
@@ -10,12 +10,13 @@ if (isset($_SESSION['warenkorb']))
         <form action="./warenkorb/update.php" method="post">
             <table>
                 <tr>
-                    <th>ID</th>
+                    <th>Id</th>
                     <th>Produkt</th>
                     <th>Preis</th>
                     <th>Anzahl</th>
                     <th>Löschen</th>
                 </tr>
+
                 <?php
                 foreach ($_SESSION['warenkorb'] as $key => $cart){
                     $stmt = $db->query("SELECT * FROM produkt WHERE id=".$cart['id']);
@@ -36,16 +37,21 @@ if (isset($_SESSION['warenkorb']))
             <input type="submit" value="aktualisieren">
         </form>
     </div>
+
     <form action="?page=checkout" method="post">
         <input type="submit" value="Zur Kasse">
     </form>
+
 <?php }
 else
 { ?>
     <div>
-        <h3>Keine Artikel im Warenkorb</h3><br>
+        <h2>Keine Artikel im Warenkorb</h2><br>
+
         <form>
             <input type="button" value="zurück zur Startseite" onclick="window.location.href='?'"/>
         </form>
-    </div><?php } ?>
+    </div>
+
+<?php } ?>
     </div>
