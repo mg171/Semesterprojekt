@@ -24,7 +24,7 @@ if (isset($_SESSION['warenkorb']))
                     ?>
                     <tr>
                         <td><?=$key;?></td>
-                        <td><a href="?page=artikel&id=<?php echo $result['id']?>">
+                        <td><a href="?page=product&id=<?php echo $result['id']?>">
                                 <?=$result['name'];?>
                             </a></td>
                         <td><?=$result['preis'];?></td>

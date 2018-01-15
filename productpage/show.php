@@ -20,8 +20,8 @@ if ($_GET["product"] == "show") {
         echo "</div><br><br>";
         ?>
         <form action='./warenkorb/hinzufuegen.php' method='post'>
-            <input class='anzahl' type='number' name='anzahl' min='1' max='9' step='1' value='1'>
-            <input type='hidden' name='produktid' value='<?php echo $result["id"]; ?>'>
+            <input class='anzahl' type='number' name='anzahl' min='1' step='1' value='1'>
+            <input type='hidden' name='id' value='<?php echo $result["id"]; ?>'>
             <input class='warenkorb' type='submit' value='In den Einkaufswagen'>
         </form>
 
