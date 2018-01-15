@@ -27,7 +27,7 @@
                 <div id='drop-link-1'><a href='index.php?page=category&category=huawei'> Huawei</a></div>
                 <div id='drop-link-1'><a href='index.php?page=category&category=lg'> LG</a></div>
                 <div id='drop-link-1'><a href='index.php?page=category&category=motorola'> Motorola</a></div>
-                <a href='index.php?page=category&action=samsung'> Samsung</a>
+                <a href='index.php?page=category&category=samsung'> Samsung</a>
             </div>
         </div>";
 
