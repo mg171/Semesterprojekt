@@ -17,7 +17,8 @@ if ($_GET["category"] == "apple") {
 
         $bildpfad = $row['bild'];
 
-        echo "<div class='hovereffect' id='grid'>
+        echo "<div class='hovereffect' id='grid'>";
+        echo "
         <img id='singlephone' src='images/productshots/" . $bildpfad . "' alt='Produktbild'>
             <div class='overlay'><p><a href='index.php?page=product&product=show&id=".$row['id']."'>ansehen</a></p>";
         echo "</div>";
@@ -41,7 +42,8 @@ if ($_GET["category"] == "samsung") {
 
         $bildpfad = $row['bild'];
 
-        echo "<div class='hovereffect' id='grid'>
+        echo "<div class='hovereffect' id='grid'>";
+        echo "
         <img id='singlephone' src='images/productshots/" . $bildpfad . "' alt='Produktbild'>
             <div class='overlay'><p><a href='index.php?page=product&product=show&id=".$row['id']."'>ansehen</a></p>";
         echo "</div>";
@@ -65,7 +67,8 @@ if ($_GET["category"] == "google") {
 
         $bildpfad = $row['bild'];
 
-        echo "<div class='hovereffect' id='grid'>
+        echo "<div class='hovereffect' id='grid'>";
+        echo "
         <img id='singlephone' src='images/productshots/" . $bildpfad . "' alt='Produktbild'>
             <div class='overlay'><p><a href='index.php?page=product&product=show&id=".$row['id']."'>ansehen</a></p>";
         echo "</div>";
@@ -89,7 +92,8 @@ if ($_GET["category"] == "huawei") {
 
         $bildpfad = $row['bild'];
 
-        echo "<div class='hovereffect' id='grid'>
+        echo "<div class='hovereffect' id='grid'>";
+        echo "
         <img id='singlephone' src='images/productshots/" . $bildpfad . "' alt='Produktbild'>
             <div class='overlay'><p><a href='index.php?page=product&product=show&id=".$row['id']."'>ansehen</a></p>";
         echo "</div>";
@@ -113,7 +117,8 @@ if ($_GET["category"] == "motorola") {
 
         $bildpfad = $row['bild'];
 
-        echo "<div class='hovereffect' id='grid'>
+        echo "<div class='hovereffect' id='grid'>";
+        echo "
         <img id='singlephone' src='images/productshots/" . $bildpfad . "' alt='Produktbild'>
             <div class='overlay'><p><a href='index.php?page=product&product=show&id=".$row['id']."'>ansehen</a></p>";
         echo "</div>";
@@ -137,7 +142,8 @@ if ($_GET["category"] == "lg") {
 
         $bildpfad = $row['bild'];
 
-        echo "<div class='hovereffect' id='grid'>
+        echo "<div class='hovereffect' id='grid'>";
+        echo "
         <img id='singlephone' src='images/productshots/" . $bildpfad . "' alt='Produktbild'>
             <div class='overlay'><p><a href='index.php?page=product&product=show&id=".$row['id']."'>ansehen</a></p>";
         echo "</div>";
