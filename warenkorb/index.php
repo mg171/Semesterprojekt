@@ -18,8 +18,10 @@ if (isset($_SESSION['warenkorb']))
                 </tr>
 
                 <?php
+                $db = new PDO($dsn, $dbuser, $dbpass);
                 foreach ($_SESSION['warenkorb'] as $key => $cart){
-                    $stmt = $db->query("SELECT * FROM produkt WHERE id=".$cart['id']);
+
+                    $stmt = $db->query("SELECT * FROM produkt WHERE id='".$cart['id']."'");
                     $result = $stmt->fetch();
                     ?>
                     <tr>
