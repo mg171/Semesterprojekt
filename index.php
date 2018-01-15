@@ -50,7 +50,7 @@ if (isset($_GET["page"]) ) {
             include "category/index.php";
             break;
         case "login":
-            include "login/login1.php";
+            include "login/login.php";
             break;
         case "product":
             include "productpage/index.php";
