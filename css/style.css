@@ -54,7 +54,7 @@ a {
     text-decoration: none; }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Open Sans', sans-serif;  }
 
 
@@ -168,6 +168,7 @@ p {
     margin-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 5%;
     border: 1px solid grey;  }
 
 #singlephone {
