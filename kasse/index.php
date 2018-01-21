@@ -2,7 +2,7 @@
 if (isset($_GET["action"]))
 {
     switch ($_GET["action"]) {
-        case "overview":
+        case "zurkasse":
             include "./kasse/zurkasse.php";
             break;
         case "erfolg":

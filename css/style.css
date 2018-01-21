@@ -306,12 +306,11 @@ input[type="submit"].warenkorb {
     border: 1px solid #4c6faf;
     border-radius: 2px;
     text-decoration: none;
-    font-size: 15px; }
+    font-size: 15px;  }
 
 input[type="submit"].warenkorb2 {
     cursor:pointer;
-    margin-left: 40%;
-    margin-right: 40%;
+    width: 100px;
     background: transparent;
     display: inline-block;
     color: #4c6faf;

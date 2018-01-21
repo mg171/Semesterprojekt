@@ -36,21 +36,16 @@
                     <?php }
                     ?>
                 </table>
-<<<<<<< Updated upstream
-                <input type="submit" value="aktualisieren">
+
+                <input class="warenkorb" type="submit" value="aktualisieren">
             </form>
         </div>
 
-        <form action="?page=checkout" method="post">
-            <input type="submit" value="Zur Kasse">
-=======
-                <input class="warenkorb2" type="submit" value="aktualisieren">
-            </form>
-        </div>
+
 
         <form action="?page=kasse&action=zurkasse" method="post">
-            <input class="warenkorb2" type="submit" value="Zur Kasse">
->>>>>>> Stashed changes
+            <input class="warenkorb" type="submit" value="Zur Kasse">
+
         </form>
 
     <?php }
