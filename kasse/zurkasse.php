@@ -1,10 +1,12 @@
+<div id="homewrapper">
+
 <?php
 session_start();
 include_once ('db/userdata.php');
 if (isset($_SESSION['warenkorb']))
 {
     ?>
-    <div>
+    <div>s
         <form action="./kasse/checkout.php" method="post">
             <table>
                 <tr>
@@ -34,19 +36,7 @@ if (isset($_SESSION['warenkorb']))
             </table>
 
             </br></br>
-            <fieldset>
-                <legend> Zahlungsart </legend>
-                <input type="radio" id="vk" name="zahlmethode" value="vorkasse" required>
-                <label for="vk"> Vorkasse</label>
-                <input type="radio" id="vi" name="zahlmethode" value="kreditkarte">
-                <label for="vi"> Kreditkarte</label>
-                <input type="radio" id="re" name="zahlmethode" value="rechnung">
-                <label for="re"> Rechnung</label>
-            </fieldset>
 
-            </br>
-
-            </br>
 
             <input type="submit" value="checkout">
         </form>
@@ -63,3 +53,5 @@ else
         </form>
     </div>
 <?php } ?>
+
+</div>
