@@ -37,11 +37,11 @@ if (isset($_SESSION['warenkorb']))
             <fieldset>
                 <legend> Zahlungsart </legend>
                 <input type="radio" id="vk" name="zahlmethode" value="vorkasse" required>
-                <label for="mc"> Vorkasse</label>
-                <input type="radio" id="nn" name="zahlmethode" value="kreditkarte">
+                <label for="vk"> Vorkasse</label>
+                <input type="radio" id="vi" name="zahlmethode" value="kreditkarte">
                 <label for="vi"> Kreditkarte</label>
-                <input type="radio" id="nn" name="zahlmethode" value="rechnung">
-                <label for="vi"> Rechnung</label>
+                <input type="radio" id="re" name="zahlmethode" value="rechnung">
+                <label for="re"> Rechnung</label>
             </fieldset>
 
             </br>
