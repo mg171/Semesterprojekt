@@ -12,7 +12,6 @@ if (isset($_SESSION['warenkorb']))
                     <th>Preis</th>
                     <th>Anzahl</th>
                     <th>Gesamt</th>
-                    <th>Löschen</th>
                 </tr>
 
                 <?php
@@ -29,7 +28,6 @@ if (isset($_SESSION['warenkorb']))
                         <td><?=$result['preis'].'€';?></td>
                         <td><?=$cart['anzahl'];?></td>
                         <td><?=$result['preis']*$cart['anzahl'].'€';?></td>
-                        <td><input type="checkbox" name="loeschen[]" value="<?=$key;?>"></td>
                     </tr>
                 <?php }
                 ?>
