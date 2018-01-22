@@ -48,12 +48,6 @@ if (isset($_SESSION['warenkorb']))
 
             </br>
 
-            <fieldset>
-                <legend> Rechtliches </legend>
-                <input type="radio" id="agb" name="agb" value="agb" required>
-                <label for="mc"> Hiermit akzeptiere ich die allgemeinen Geschäftsbedingungen.</label>
-            </fieldset>
-
             </br>
 
             <input type="submit" value="checkout">

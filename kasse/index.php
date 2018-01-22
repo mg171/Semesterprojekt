@@ -3,10 +3,10 @@ if (isset($_GET["action"]))
 {
     switch ($_GET["action"]) {
         case "zurkasse":
-            include "./kasse/zurkasse.php";
+            include "zurkasse.php";
             break;
         case "erfolg":
-            include "./kasse/erfolg.php";
+            include "erfolg.php";
             break;
         default:
             echo "Seite nicht gefunden";
