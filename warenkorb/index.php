@@ -23,15 +23,17 @@
 
                         $stmt = $db->query("SELECT * FROM produkt WHERE id='".$cart['id']."'");
                         $result = $stmt->fetch();
+                        $menge = $key;
                         ?>
                         <tr>
                             <td><a href="?page=product&product=show&id=<?php echo $result['id']?>">
                                     <?=$result['artikelname'];?>
                                 </a></td>
                             <td><?=$result['preis'].'€';?></td>
-                            <td><?=$cart['anzahl'];?></td>
+                            <td><input type="number" name="anzahl[<?=$menge;?>]" value="<?=$cart['anzahl'];?>" min="1"</td>
                             <td><?=$result['preis']*$cart['anzahl'].'€';?></td>
                             <td><input type="checkbox" name="loeschen[]" value="<?=$key;?>"></td>
+                            <input type="hidden" name="menge[]" value="<?=$menge;?>"
                         </tr>
                     <?php }
                     ?>
@@ -43,7 +45,7 @@
 
 
 
-        <form action="?page=kasse&action=zurkasse" method="post">
+        <form action="?page=kasse&action=checkout" method="post">
             <input class="warenkorb" type="submit" value="Zur Kasse">
 
         </form>

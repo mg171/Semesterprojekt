@@ -1,5 +1,14 @@
 <?php
 session_start();
+if (isset($_POST['anzahl']) || isset($_POST['loeschen'])) {
+    if (isset($_POST['anzahl'])) {
+        $catch = $_POST['menge'];
+        foreach ($catch as $temp) {
+            $anzahl = $_POST['anzahl'][$temp];
+            $_SESSION['warenkorb'][$temp]['anzahl'] = $anzahl;
+        }
+    }
+
 if (isset ($_POST['loeschen'])) {
     $catch = $_POST['loeschen'];
 
@@ -12,6 +21,7 @@ if (isset ($_POST['loeschen'])) {
     if ($count < 1) {
         unset($_SESSION['warenkorb']);
     }
+}
 
     header('Location: ../index.php?page=warenkorb');
 }
