@@ -260,8 +260,8 @@ img#pagephone {
 #cartwrapper {
     display: block;
     margin-top: 80px;
-    margin-left: 20%;
-    margin-right: 20%;  }
+    margin-left: auto;
+    margin-right: auto;  }
 
 /* brand icons style landing page */
 
@@ -320,7 +320,6 @@ input[type="submit"].warenkorb2 {
     font-size: 15px; }
 
 input[type="submit"]:hover {background: #4c6faf; color: #FFF;}
-
 
 /* Login Style */
 

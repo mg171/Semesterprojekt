@@ -45,7 +45,7 @@
 
 
 
-        <form action="?page=kasse&action=checkout" method="post">
+        <form action="?page=kasse&action=zurkasse" method="post">
             <input class="warenkorb" type="submit" value="Zur Kasse">
 
         </form>
