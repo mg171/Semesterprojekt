@@ -6,7 +6,7 @@ include_once ('db/userdata.php');
 if (isset($_SESSION['warenkorb']))
 {
     ?>
-    <div>s
+    <div>
         <form action="./kasse/checkout.php" method="post">
             <table>
                 <tr>
@@ -35,7 +35,32 @@ if (isset($_SESSION['warenkorb']))
                 ?>
             </table>
 
-            </br></br>
+            <br><br>
+
+            Vorname:<input type='text' name="vorname"><br>
+            Nachname:<input type="text" name="nachname"><br>
+            E-Mail-Adresse:<input type="text" name="email"><br>
+            Straße:<input type="text" name="strasse"><br>
+            Hausnummer:<input type="text" name="hausnummer"><br>
+            Postleitzahl:<input type="text" name="plz"><br>
+            Stadt:<input type="text" name="stadt"><br>
+
+            <br><br>
+
+
+            <legend> Zahlungsart </legend>
+            <input type="radio" id="vk" name="zahlmethode" value="vorkasse" required>
+            <label for="mc"> Vorkasse</label>
+            <input type="radio" id="nn" name="zahlmethode" value="rechnung">
+            <label for="vi"> Rechnung</label>
+
+            <br><br>
+
+            <legend> Rechtliches </legend>
+            <input type="radio" id="agb" name="agb" value="agb" required>
+            <label for="mc"> Hiermit akzeptiere ich die allgemeinen AGBS.</label>
+
+            <br><br>
 
 
             <input type="submit" value="checkout">
