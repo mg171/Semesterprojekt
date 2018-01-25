@@ -37,26 +37,24 @@ if (isset($_SESSION['warenkorb']))
 
             <br><br>
 
-            Vorname:<input type='text' name="vorname"><br>
-            Nachname:<input type="text" name="nachname"><br>
-            E-Mail-Adresse:<input type="text" name="email"><br>
-            Straße:<input type="text" name="strasse"><br>
-            Hausnummer:<input type="text" name="hausnummer"><br>
-            Postleitzahl:<input type="text" name="plz"><br>
-            Stadt:<input type="text" name="stadt"><br>
+            Vorname:<input type='text' name="vorname" required><br>
+            Nachname:<input type="text" name="nachname" required><br>
+            E-Mail-Adresse:<input type="text" name="email" required><br>
+            Straße:<input type="text" name="strasse" required><br>
+            Hausnummer:<input type="text" name="hausnummer" required><br>
+            Postleitzahl:<input type="text" name="plz" required><br>
+            Stadt:<input type="text" name="stadt" required><br>
 
             <br><br>
 
 
-            <legend> Zahlungsart </legend>
-            <input type="radio" id="vk" name="zahlmethode" value="vorkasse" required>
-            <label for="mc"> Vorkasse</label>
-            <input type="radio" id="nn" name="zahlmethode" value="rechnung">
-            <label for="vi"> Rechnung</label>
+            Zahlungsart<br>
+            <input type="radio" id="nn" name="zahlmethode" value="rechnung" required>
+            <label for="mc"> Rechnung</label>
 
             <br><br>
 
-            <legend> Rechtliches </legend>
+            Rechtliches<br>
             <input type="radio" id="agb" name="agb" value="agb" required>
             <label for="mc"> Hiermit akzeptiere ich die allgemeinen AGBS.</label>
 

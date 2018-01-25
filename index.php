@@ -52,6 +52,9 @@ if (isset($_GET["page"]) ) {
         case "login":
             include "login/login.php";
             break;
+        case "backend":
+            include "backend/index.php";
+            break;
         case "product":
             include "productpage/index.php";
             break;
