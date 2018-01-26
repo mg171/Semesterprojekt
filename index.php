@@ -79,6 +79,34 @@ else
 
 </body>
 
+<footer class="footer">
+    <div class="quicklinks">
+        <h4>Quick Links</h4>
+        <ul>
+            <li><a href="#">Impressum</a></li>
+            <li><a href="#">AGB</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </div>
+
+    <div class="adresse">
+        <h4>Adresse</h4>
+        <p>
+            Webshop Handy <br>
+            Nobelstraße 10 <br>
+            70569 Stuttgart
+        </p>
+    </div>
+
+    <div class="kontakt">
+        <h4>Kontakt</h4>
+        <p>
+            Telefon: 0171 1980101 <br>
+            Telefax: 0711 8923 11
+        </p>
+    </div>
+</footer>
+
 
 
 </html>

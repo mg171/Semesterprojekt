@@ -10,18 +10,18 @@ body, html {
 
 
 .footer {
-    overflow: hidden;
-    bottom: 0;
-    right: 0;
+    position: sticky;
     left: 0;
-    padding: 5px 0;
-    display: inline-block;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
+    bottom: 0;
     width: 100%;
-    border-top: 1px solid #e7e7e7;
-    color: #262626;
-    font-size: 8pt;  }
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.footer ul {
+    list-style: none;
+}
 
 h1 {
     font-weight: 300;
