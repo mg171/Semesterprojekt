@@ -17,7 +17,7 @@ $stmt->execute();
 $results = $stmt->fetchAll();
 foreach ($results as $row) {
     echo '
-    <form action="backend/artikelaenderndo.php" method="post">
+    <form action="backend/produktaenderndo.php" method="post">
         <input type="hidden" name="id" value="' . $id . '">
         <br>
         <input type="text" name="name" value="' . $row["artikelname"] . '">

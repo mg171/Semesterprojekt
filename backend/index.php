@@ -4,13 +4,13 @@ if (isset($_GET["action"]))
     switch ($_GET["action"]) {
        
         case "artikel":
-            include "artikel.php";
+            include "produkt.php";
             break;
         case "artikelaendern":
-            include "artikelaendern.php";
+            include "produktaendern.php";
             break;
         case "artikelneu":
-            include "artikelneu.php";
+            include "produktneu.php";
             break;
         default:
             echo "Seite nicht gefunden";
