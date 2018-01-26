@@ -59,7 +59,7 @@ h2 {
 .bold {
     font-weight: 500; }
     
-th, td {
+td.home {
     padding: 15px;
     font-weight: 300;  }
 
@@ -276,6 +276,7 @@ img#pagephone {
     margin-left: auto;
     margin-right: auto;  }
 
+
 /* brand icons style landing page */
 
 .img-thumbnail {
@@ -293,6 +294,8 @@ img#pagephone {
 
 .productinfo {
     font-size: 12px; }
+
+
 
 /* Input Types Cart */
 

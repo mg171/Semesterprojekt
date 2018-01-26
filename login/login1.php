@@ -21,7 +21,7 @@ if ( isset($_POST['login']) && isset($_POST['password']) ) {
     if ($user !== false && md5($password)==$user['password']) {
         $_SESSION['id'] = $user['id'];
         $_SESSION['login'] = $user['login'];
-        die('Der Login war erfolgreich.');
+        header('Location: backend/produkt.php');
 
     } else {
         $fehlermeldung = "Fehler: Benutzername oder Passwort ungültig<br> ";
