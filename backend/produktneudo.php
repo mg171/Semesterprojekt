@@ -1,11 +1,12 @@
 <?php
 session_start();
+
 //Berechtigung prüfen
 
-/* if (!isset($_SESSION["login"]))
+if (!isset($_SESSION["login"]))
 {
     header("location:./index.php");
-} */
+}
 
 include ("../db/userdata.php");
 

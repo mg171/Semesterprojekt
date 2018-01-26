@@ -16,22 +16,24 @@ session_start();
 
 //Berechtigung prüfen
 
-/* if (!isset($_SESSION["login"]))
+if (!isset($_SESSION["login"]))
 {
     header("location:./index.php");
-} */
+}
 
 include ("../db/userdata.php");
 
+echo '<h2>Neues Produkt einstellen</h2><br>';
+
 echo'
     <form action="produktneudo.php" method="post" enctype="multipart/form-data">
-    Artikelname:<input type="text" name="artikelname"><br>
-    Marke:<input type="text" name="marke_id"><br>
-    Beschreibung:<input type="text" name="beschreibung"><br>
-    Preis:<input type="text" name="preis"><br>
-    Bild:<input type="file" name="bild"><br>
-    Menge:<input type="text" name="menge"><br>
-    Mindestbestand:<input type="text" name="mindestbestand"><br>
-    EAN-Code:<input type="text" name="eancode"><br>
+    Artikelname:<br><input type="text" name="artikelname"><br><br>
+    Marken_ID: (1-Apple, 2-Samsung, 3-Google, 4-Huawei, 5-Motorola, 6-LG)<br><input type="text" name="marke_id"><br><br>
+    Beschreibung:<br><input type="text" name="beschreibung"><br><br>
+    Preis:<br><input type="text" name="preis"><br><br>
+    Produktbild:<br><input type="file" name="bild"><br><br>
+    Menge:<br><input type="text" name="menge"><br><br>
+    Mindestbestand:<br><input type="text" name="mindestbestand"><br><br>
+    EAN-Code:<br><input type="text" name="eancode"><br><br>
     <input type ="submit" value="Artikel hinzufügen">
 </form>';

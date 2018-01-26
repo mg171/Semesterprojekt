@@ -40,11 +40,12 @@ foreach ($result as $row) {
     echo "<tr>
                     <th>ID</th>
                     <th>Produktname</th>
-                    <th>Marke_ID</th>
+                    <th>Marke</th>
                     <th>Beschreibung</th>
                     <th>Preis</th>
                     <th>Menge</th>
-                    <th>Eancode</th>
+                    <th>Min.Bestand</th>
+                    <th>EAN</th>
                     <th><i class=\"fa fa-pencil-square-o\" aria-hidden=\"true\"></i></th>
                 </tr>";
 
@@ -66,10 +67,11 @@ foreach ($result as $row) {
     echo "<td width='400'>". $row['beschreibung'] . "</td>";
     echo "<td width='50'>". $row['preis'] . "€</td>";
     echo "<td width='50'>". $row['menge'] . "</td>";
-    echo "<td width='100'>". $row['eancode'] . "</td>";
+    echo "<td width='50'>". $row['mindestbestand'] . "</td>";
+    echo "<td width='50'>". $row['eancode'] . "</td>";
     echo "<td>";
     echo '<a href="index.php?page=backend&action=produktaendern&id='. $id .'">';
-        echo 'bearbeiten';
+        echo 'edit';
         echo '</a>';
     echo "</tr>";
     echo "<br>";
