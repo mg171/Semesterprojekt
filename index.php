@@ -79,6 +79,8 @@ else
 
 </body>
 
+<!--
+
 <footer class="footer">
     <div class="quicklinks">
         <h4>Quick Links</h4>
@@ -107,6 +109,6 @@ else
     </div>
 </footer>
 
-
+-->
 
 </html>

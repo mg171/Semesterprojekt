@@ -8,6 +8,8 @@ body, html {
     width: 100%;
     background-color: #ffffff;  }
 
+/* Footer */
+
 
 .footer {
     position: sticky;
@@ -22,6 +24,17 @@ body, html {
 .footer ul {
     list-style: none;
 }
+
+.quicklinks {
+    float: left; }
+
+.adresse {
+   float: left; }
+
+.kontakt {
+    }
+
+/* Footer Ende */
 
 h1 {
     font-weight: 300;

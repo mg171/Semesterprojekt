@@ -10,6 +10,7 @@ if (isset($_SESSION['warenkorb']))
         <form action="./kasse/checkout.php" method="post">
             <table>
                 <tr>
+                    <th>ID</th>
                     <th>Produkt</th>
                     <th>Preis</th>
                     <th>Anzahl</th>
@@ -24,6 +25,7 @@ if (isset($_SESSION['warenkorb']))
                     $result = $stmt->fetch();
                     ?>
                     <tr>
+                        <td><?=$cart['id'];?></td>
                         <td><a href="?page=product&product=show&id=<?php echo $result['id']?>">
                                 <?=$result['artikelname'];?>
                             </a></td>
