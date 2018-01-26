@@ -37,3 +37,7 @@ echo'
     EAN-Code:<br><input type="text" name="eancode"><br><br>
     <input type ="submit" value="Artikel hinzufügen">
 </form>';
+
+echo '<br><a href="./produkt.php"> Zurück zur Produktübersicht</a>';
+?>
+
