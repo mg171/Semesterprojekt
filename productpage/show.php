@@ -17,12 +17,13 @@ if ($_GET["product"] == "show") {
         echo "<div class='preis'>" . $row['preis'] . " €" . "</div><br><br>";
         echo "<div class='productinfo'>Eancode: " . $row['eancode'] . "<br><br>";
         echo $row['beschreibung'] . "<br></div>";
+        /* if ($row['menge']>=5) { echo ""} else if ... else */
         echo "</div><br><br>";
         ?>
         <form action='./warenkorb/hinzufuegen.php' method='post'>
             <input class='anzahl' type='number' name='anzahl' min='1' step='1' value='1'>
             <input type='hidden' name='id' value='<?php echo $result["id"]; ?>'>
-            <input class='warenkorb' type='submit' value='In den Einkaufswagen'>
+            <input class='warenkorb2' type='submit' value='In den Einkaufswagen'>
         </form>
 
 <?php

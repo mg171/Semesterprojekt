@@ -45,11 +45,11 @@ if(isset($_SESSION['userid'])) {
     ?>
 
 <br>
-    <h1 id=h1>Login</h1>
+    <h1 id=h1>Login</h1><br>
     <form action="index.php?page=login&action=login" method="post">
-        <input type="text" name="login" placeholder="Benutzername">
-        <input type="password" name="password" placeholder="Passwort"><br>
-        <input type="submit" value="anmelden">
+        <input type="text" class="loginform" name="login" placeholder="Benutzername"><br>
+        <input type="password" class="loginform" name="password" placeholder="Passwort"><br>
+        <input type="submit" class="loginform" value="anmelden">
     </form>
 
 

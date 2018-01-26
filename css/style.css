@@ -42,15 +42,15 @@ h1 {
     text-align: center; }
 
 #h1 {
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 400px;
     font-size: 30px;
     font-weight: 300;
     text-transform: uppercase;
     color: #262626;
     border: 1px solid black;
-    text-align: center;
-    padding: 5px;
-    margin-right: 5%;
-    margin-left: 5%; }
+}
 
 h2 {
     font-weight: 200;
@@ -58,6 +58,9 @@ h2 {
 
 .bold {
     font-weight: 500; }
+
+th, td {
+    padding: 15px; }
     
 td.home {
     padding: 15px;
@@ -273,8 +276,8 @@ img#pagephone {
 #cartwrapper {
     display: block;
     margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;  }
+    margin-left: 20%;
+    margin-right: 20%;  }
 
 
 /* brand icons style landing page */
@@ -297,7 +300,7 @@ img#pagephone {
 
 
 
-/* Input Types Cart */
+/* Input Types */
 
 .anzahl {
     width: auto;
@@ -310,11 +313,12 @@ input[type=number].anzahl {
     border-radius: 2px;
     font-size: 15px;}
 
-.warenkorb {
-     }
 
 input[type="submit"].warenkorb {
     cursor:pointer;
+    float: left;
+    margin: 10px;
+    height: 30px;
     width: 200px;
     background: transparent;
     display: inline-block;
@@ -326,7 +330,8 @@ input[type="submit"].warenkorb {
 
 input[type="submit"].warenkorb2 {
     cursor:pointer;
-    width: 100px;
+    width: 200px;
+    padding: 12px;
     background: transparent;
     display: inline-block;
     color: #4c6faf;
@@ -334,6 +339,14 @@ input[type="submit"].warenkorb2 {
     border-radius: 2px;
     text-decoration: none;
     font-size: 15px; }
+
+input [type="submit"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;  }
 
 input[type="submit"]:hover {background: #4c6faf; color: #FFF;}
 
@@ -343,10 +356,13 @@ input[type="submit"]:hover {background: #4c6faf; color: #FFF;}
     border: 3px solid #f1f1f1;
     margin: 150px;  } */
 
-input[type=text], input[type=password], input[type=submit] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+input[type=text].loginform, input[type=password].loginform, input[type=submit].loginform {
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 400px;
+    height: 50px;
+    margin-top: 20px;
+    padding: 10px;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;  }

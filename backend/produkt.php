@@ -44,7 +44,6 @@ foreach ($result as $row) {
                     <th>Beschreibung</th>
                     <th>Preis</th>
                     <th>Menge</th>
-                    <th>Mindestbestand</th>
                     <th>Eancode</th>
                     <th><i class=\"fa fa-pencil-square-o\" aria-hidden=\"true\"></i></th>
                 </tr>";
@@ -61,13 +60,12 @@ foreach ($result as $row) {
 
 
     echo "<tr>";
-    echo "<td width='30'>". $row['id'] . "</td>";
-    echo "<td width='80'>". $row['artikelname'] . "</td>";
-    echo "<td width='30'>". $row['marke_id'] . "</td>";
-    echo "<td width='500'>". $row['beschreibung'] . "</td>";
+    echo "<td width='50'>". $row['id'] . "</td>";
+    echo "<td width='100'>". $row['artikelname'] . "</td>";
+    echo "<td width='50'>". $row['marke_id'] . "</td>";
+    echo "<td width='400'>". $row['beschreibung'] . "</td>";
     echo "<td width='50'>". $row['preis'] . "€</td>";
-    echo "<td width='80'>". $row['menge'] . "</td>";
-    echo "<td width='140'>". $row['mindestbestand'] . "</td>";
+    echo "<td width='50'>". $row['menge'] . "</td>";
     echo "<td width='100'>". $row['eancode'] . "</td>";
     echo "<td>";
     echo '<a href="index.php?page=backend&action=produktaendern&id='. $id .'">';
