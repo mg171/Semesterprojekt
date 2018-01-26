@@ -3,13 +3,13 @@ if (isset($_GET["action"]))
 {
     switch ($_GET["action"]) {
        
-        case "artikel":
+        case "produkt":
             include "produkt.php";
             break;
-        case "artikelaendern":
+        case "produktlaendern":
             include "produktaendern.php";
             break;
-        case "artikelneu":
+        case "produktneu":
             include "produktneu.php";
             break;
         default:
