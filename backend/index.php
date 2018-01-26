@@ -6,7 +6,7 @@ if (isset($_GET["action"]))
         case "produkt":
             include "produkt.php";
             break;
-        case "produktlaendern":
+        case "produktaendern":
             include "produktaendern.php";
             break;
         case "produktneu":
