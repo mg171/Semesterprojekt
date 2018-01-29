@@ -12,6 +12,9 @@ if (isset($_GET["action"]))
         case "produktneu":
             include "produktneu.php";
             break;
+        case "bestellungen":
+            include "bestellungen.php";
+            break;
         default:
             echo "Seite nicht gefunden";
             die();

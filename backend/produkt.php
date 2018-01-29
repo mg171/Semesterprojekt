@@ -25,6 +25,9 @@ include ('../db/userdata.php');
 
 echo '<a href="index.php?page=backend&action=produktneu">Neues Produkt einstellen</a><br><br>';
 
+echo '<a href="index.php?page=backend&action=bestellungen">Bestellungen ansehen</a><br><br>';
+
+
 
 echo '<h1>Produktübersicht</h1>';
 
@@ -72,7 +75,7 @@ foreach ($result as $row) {
     echo "<td>";
     echo '<a href="index.php?page=backend&action=produktaendern&id='. $id .'">';
         echo 'edit';
-        echo '</a>';
+        echo '</a></td>';
     echo "</tr>";
     echo "<br>";
 
