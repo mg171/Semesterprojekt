@@ -7,6 +7,8 @@ $name = $_POST['besuchername'];
 $besucher_mail = $_POST['besuchermail'];
 $nachricht = $_POST['nachricht'];
 
+
+//Validieren
 if (empty($name)|| empty($besucher_mail))
 {
     echo "Bitte Name und Nachricht ausfüllen";
@@ -21,5 +23,6 @@ $email_nachricht = "Ein Kontaktformular wurde auf Ihre Seite ausgefüllt von $na
 $to = 'lenapopp8@gmail.com';
 $headers = "Von: $email_von \r\n";
 
+//Mail schicken
 mail($to, $email_betreff, $email_nachricht, $headers);
 
