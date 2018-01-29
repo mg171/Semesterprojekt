@@ -50,6 +50,7 @@ foreach ($result as $row) {
                     <th>Min.Bestand</th>
                     <th>EAN</th>
                     <th><i class=\"fa fa-pencil-square-o\" aria-hidden=\"true\"></i></th>
+                    <th><i class=\"fa fa-trash\" aria-hidden=\"true\"></i></th>
                 </tr>";
 
     $id = $row['id'];
@@ -67,15 +68,17 @@ foreach ($result as $row) {
     echo "<td width='50'>". $row['id'] . "</td>";
     echo "<td width='100'>". $row['artikelname'] . "</td>";
     echo "<td width='50'>". $row['marke_id'] . "</td>";
-    echo "<td width='400'>". $row['beschreibung'] . "</td>";
+    echo "<td width='300'>". $row['beschreibung'] . "</td>";
     echo "<td width='50'>". $row['preis'] . "€</td>";
     echo "<td width='50'>". $row['menge'] . "</td>";
     echo "<td width='50'>". $row['mindestbestand'] . "</td>";
     echo "<td width='50'>". $row['eancode'] . "</td>";
-    echo "<td>";
-    echo '<a href="index.php?page=backend&action=produktaendern&id='. $id .'">';
+    echo '<td><a href="index.php?page=backend&action=produktaendern&id='. $id .'">';
         echo 'edit';
         echo '</a></td>';
+    echo '<td><a href="index.php?page=backend&action=produktloeschen&id='. $id .'">';
+    echo 'delete';
+    echo '</a></td>';
     echo "</tr>";
     echo "<br>";
 

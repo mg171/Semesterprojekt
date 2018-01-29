@@ -39,13 +39,12 @@ $stmt->bindParam(":bild", $_FILES['bild']['name']);
 $stmt->bindParam(":menge", $_POST["menge"]);
 $stmt->bindParam(":mindestbestand", $_POST["mindestbestand"]);
 $stmt->bindParam(":eancode", $_POST["eancode"]);
-echo "Das neue Produkt wurde erfolgreich hinzugefügt!";
-?>
-<form>
-<input type="button" value="zurück zur Produktübersicht" onclick="window.location.href='?'"/>
-</form>
 
-<?php
+echo "<br>";
+echo "Das neue Produkt wurde erfolgreich hinzugefügt!";
+echo "<br><br>";
+
+echo '<a href="index.php?page=backend&action=produkt">Zurück zur Produktübersicht</a><br><br>';
 
 
 if(!$stmt->execute()){

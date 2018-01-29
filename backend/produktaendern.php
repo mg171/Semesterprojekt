@@ -43,7 +43,7 @@ try {
         echo "Menge: <br><input type='text' name='menge' value='$zeile->menge'/><br><br>";
         echo "Mindestbestand: <br><input type='text' name='mindestbestand' value='$zeile->mindestbestand'/><br><br>";
         echo "EANCode: <br><input type='text' name='eancode' value='$zeile->eancode'/><br><br>";
-        echo "<input type='submit' value='Post aktualisieren' />";
+        echo "<input type='submit' value='Produkt aktualisieren' />";
         echo "</form>"; }
 
     else {
