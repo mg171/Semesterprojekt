@@ -1,4 +1,4 @@
-<div class="homewrapper">
+<div id="homewrapper">
 
     <h1>Vielen Dank für Ihre Bestellung!</h1>
 
