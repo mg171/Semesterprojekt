@@ -23,9 +23,11 @@ $stmt = $db->prepare($sql);
 $stmt->execute();
 $newbestnr = $stmt->fetchColumn();
 
-//Bestellungen in Datenbank
+
+// Bestellungen in Datenbank
 
 foreach ($_SESSION['warenkorb'] as $key => $cart) {
+
 
 $produktid = $cart['id'];
 $anzahl = $cart['anzahl'];
