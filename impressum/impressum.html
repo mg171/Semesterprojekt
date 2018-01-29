@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Impressum</title>
+</head>
+<body>
+    <h1>Impressum</h1>
+
+    <h3>Webshop Handy</h3>
+    <p>Nobelstraße 10<br>
+    70569 Stuttgart</p>
+
+    <h3>Kundenservice</h3>
+    <p>0171 1980101</p>
+
+    <!--Kontaktformular -->
+    <h3>Kontaktformular</h3>
+    <form class="kontaktformular" action="impressum_do.php">
+        <div>
+            <label for="besuchername">Ihr Name:</label>
+            <input type="text" id="besuchername" name="besuchername"> </div>
+        <div>
+            <label for="besuchermail">Ihre E-Mail:</label>
+            <input type="email" id="besuchermail" name="besuchermail">
+        </div>
+        <div>
+            <label for="nachricht">Ihre Nachricht:</label>
+            <textarea id="nachricht" name="nachricht"
+                      cols="20" rows="5"></textarea>
+        </div> <div>
+        <input type="submit" value="Abschicken">
+    </div>
+    </form>
+</body>
+</html>
