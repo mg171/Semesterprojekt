@@ -18,36 +18,37 @@ catch (PDOException $p)
 }
 
 
+$sql = "SELECT MAX(bestellnummer) + 1 FROM bestellungen";
+$stmt = $db->prepare($sql);
+$stmt->execute();
+$newbestnr = $stmt->fetchColumn();
+
+//Bestellungen in Datenbank
 
 foreach ($_SESSION['warenkorb'] as $key => $cart) {
 
-    $produktid = $cart['id'];
-    $anzahl = $cart['anzahl'];
+$produktid = $cart['id'];
+$anzahl = $cart['anzahl'];
+$vorname = $_POST["vorname"];
+$nachname = $_POST["nachname"];
+$email = $_POST["email"];
+$strasse = $_POST["strasse"];
+$hausnummer = $_POST["hausnummer"];
+$stadt = $_POST["stadt"];
+$plz = $_POST["plz"];
+$zahlmethode = $_POST['zahlmethode'];
 
 
-$stmt = $db->prepare ("INSERT INTO bestellungen (bestellnummer, vorname, nachname, email, strasse, hausnummer,
+$sql = "INSERT INTO bestellungen (best_id, bestellnummer, vorname, nachname, email, strasse, hausnummer,
 stadt, plz, zahlmethode, prod_id, prod_anzahl)
-  VALUES ('', :vorname, :nachname, :email, :strasse, :hausnummer, 
-:stadt, :plz, :zahlmethode, :prod_id, :prod_anzahl)");
-
-$stmt->bindParam(":vorname", $_POST["vorname"]);
-$stmt->bindParam(":nachname", $_POST["nachname"]);
-$stmt->bindParam(":email", $_POST["email"]);
-$stmt->bindParam(":strasse", $_POST["strasse"]);
-$stmt->bindParam(":hausnummer", $_POST["hausnummer"]);
-$stmt->bindParam(":stadt", $_POST["stadt"]);
-$stmt->bindParam(":plz", $_POST["plz"]);
-$stmt->bindParam(":zahlmethode",$_POST['zahlmethode']);
-$stmt->bindParam(":prod_id",$produktid);
-$stmt->bindParam(":prod_anzahl",$anzahl);
-$stmt->execute();
-
+  VALUES ('', '$newbestnr', '$vorname', '$nachname', '$email', '$strasse', '$hausnummer', 
+'$stadt', '$plz', '$zahlmethode', '$produktid', '$anzahl')";
+$db->exec($sql);
 
 }
 
-        
-        unset($_SESSION['warenkorb']);
-        header('Location: ../index.php?page=kasse&action=bestaetigung');
+unset($_SESSION['warenkorb']);
+header('Location: ../index.php?page=kasse&action=bestaetigung');
 
 ?>
 </div>
