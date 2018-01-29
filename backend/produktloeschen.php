@@ -14,9 +14,22 @@
 <?php
 session_start();
 
-//Berechtigung prüfen
+// Berechtigung prüfen
 
 if (!isset($_SESSION["login"]))
 {
     header("location:./index.php");
 }
+
+$id=$_GET ["id"];
+include ('../db/userdata.php');
+$stmt = $db->query("SELECT * FROM produkt WHERE id=" . $id);
+$stmt->execute();
+$results=$stmt->fetch();
+$name=$results["name"];
+echo "Soll das Produkt $artikelname wirklich gelöscht werden?";
+echo "<br><br>";
+echo '<a href="backend/produktloeschendo.php?id='.$id .'">Ja, Produkt löschen.</a>
+        <br>
+        <br>
+      <a href="./produkt.php">Nein, zurück zur Produktübersicht.</a>';
