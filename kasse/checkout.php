@@ -2,31 +2,52 @@
 
 <?php
 session_start();
-include_once ('db/userdata.php');
+include_once ('../db/userdata.php');
 
-// Action
+try
+{
+    $db = new PDO($dsn, $dbuser, $dbpass);
+}
 
-$stmt = $db->prepare ("INSERT INTO kunden (kunden_id, vorname, nachname, email, telefonnummer, strasse, hausnummer,
-stadt, land, plz) VALUES ('', :vorname, :nachname, :email, :telefonnummer, :strasse, :hausnummer, 
-:stadt, :land, :plz)");
+catch (PDOException $p)
 
-$Produkt_ID = //Action
+{
 
-<td><a href="?page=product&product=show&id=<?php echo $result['id']?>">
+    echo ("Fehler bei Aufbau der Datenbankverbindung.");
+    die();
+}
+
+
+
+foreach ($_SESSION['warenkorb'] as $key => $cart) {
+
+    $produktid = $cart['id'];
+    $anzahl = $cart['anzahl'];
+
+
+$stmt = $db->prepare ("INSERT INTO bestellungen (bestellnummer, vorname, nachname, email, strasse, hausnummer,
+stadt, plz, zahlmethode, prod_id, prod_anzahl)
+  VALUES ('', :vorname, :nachname, :email, :strasse, :hausnummer, 
+:stadt, :plz, :zahlmethode, :prod_id, :prod_anzahl)");
 
 $stmt->bindParam(":vorname", $_POST["vorname"]);
 $stmt->bindParam(":nachname", $_POST["nachname"]);
 $stmt->bindParam(":email", $_POST["email"]);
-$stmt->bindParam(":telefonnummer", $_POST["telefonnummer"]);
 $stmt->bindParam(":strasse", $_POST["strasse"]);
 $stmt->bindParam(":hausnummer", $_POST["hausnummer"]);
 $stmt->bindParam(":stadt", $_POST["stadt"]);
-$stmt->bindParam(":land", $_POST["land"]);
 $stmt->bindParam(":plz", $_POST["plz"]);
-$stmt->bindParam(":produktid", $Produkt_ID);
+$stmt->bindParam(":zahlmethode",$_POST['zahlmethode']);
+$stmt->bindParam(":prod_id",$produktid);
+$stmt->bindParam(":prod_anzahl",$anzahl);
 $stmt->execute();
 
 
+}
 
+        
+        unset($_SESSION['warenkorb']);
+        header('Location: ../index.php?page=kasse&action=bestaetigung');
 
-
+?>
+</div>

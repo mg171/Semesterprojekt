@@ -10,7 +10,6 @@ if (isset($_SESSION['warenkorb']))
         <form action="./kasse/checkout.php" method="post">
             <table>
                 <tr>
-                    <th>ID</th>
                     <th>Produkt</th>
                     <th>Preis</th>
                     <th>Anzahl</th>
@@ -21,11 +20,11 @@ if (isset($_SESSION['warenkorb']))
                 $db = new PDO($dsn, $dbuser, $dbpass);
                 foreach ($_SESSION['warenkorb'] as $key => $cart){
 
+
                     $stmt = $db->query("SELECT * FROM produkt WHERE id='".$cart['id']."'");
                     $result = $stmt->fetch();
                     ?>
                     <tr>
-                        <td><?=$cart['id'];?></td>
                         <td><a href="?page=product&product=show&id=<?php echo $result['id']?>">
                                 <?=$result['artikelname'];?>
                             </a></td>
@@ -39,31 +38,33 @@ if (isset($_SESSION['warenkorb']))
 
             <br><br>
 
-            Vorname:<input type='text' name="vorname" required><br>
-            Nachname:<input type="text" name="nachname" required><br>
-            E-Mail-Adresse:<input type="text" name="email" required><br>
-            Straße:<input type="text" name="strasse" required><br>
-            Hausnummer:<input type="text" name="hausnummer" required><br>
-            Postleitzahl:<input type="text" name="plz" required><br>
-            Stadt:<input type="text" name="stadt" required><br>
+            Vorname: <input class="checkout" type='text' name="vorname" required><br>
+            Nachname: <input type="text" name="nachname" required><br>
+            E-Mail-Adresse: <input type="text" name="email" required><br>
+            Straße: <input type="text" name="strasse" required><br>
+            Hausnummer: <input type="text" name="hausnummer" required><br>
+            Postleitzahl: <input type="text" name="plz" required><br>
+            Stadt: <input type="text" name="stadt" required><br>
 
             <br><br>
 
 
-            Zahlungsart<br>
-            <input type="radio" id="nn" name="zahlmethode" value="rechnung" required>
-            <label for="mc"> Rechnung</label>
+            <h3>Zahlungsart</h3><br>
+            <input type="radio" id="nn" name="zahlmethode" value="Rechnung" required>
+            <label for="mc"> Rechnung</label><br>
+            <input type="radio" id="nn" name="zahlmethode" value="Kreditkarte" required>
+            <label for="kk"> Kreditkarte</label>
 
-            <br><br>
+            <br><br><br>
 
-            Rechtliches<br>
+            <h3>Rechtliches</h3><br>
             <input type="radio" id="agb" name="agb" value="agb" required>
-            <label for="mc"> Hiermit akzeptiere ich die allgemeinen AGBS.</label>
+            <label for="mc"> Hiermit akzeptiere ich die AGB.</label>
 
             <br><br>
 
 
-            <input type="submit" value="checkout">
+            <input class="bestellen" type="submit" value="Jetzt kostenpflichtig bestellen">
         </form>
 
     </div>
