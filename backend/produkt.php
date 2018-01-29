@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="https://use.fontawesome.com/2ab6c8da3b.js"></script>
     <style>
-        body { margin: 40px; }
+        body { margin: 30px; }
     </style>
 </head>
-
+<body>
 <?php
 session_start();
 
-//Berechtigung prüfen
+// Berechtigung prüfen
 
 if (!isset($_SESSION["login"]))
 {
@@ -85,3 +85,4 @@ foreach ($result as $row) {
 echo "</table>";
 }
 ?>
+</body>
