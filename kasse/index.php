@@ -5,6 +5,9 @@ if (isset($_GET["action"]))
         case "zurkasse":
             include "zurkasse.php";
             break;
+        case "bestaetigung":
+            include "bestaetigung.php";
+            break;
         default:
             echo "Seite nicht gefunden";
             die();
