@@ -52,10 +52,10 @@ foreach ($result as $row) {
 
 
     echo "<tr>";
-    echo "<td width='30'>". $row['bestellnummer'] . "</td>";
-    echo "<td width='30'>". $row['vorname'] . "</td>";
-    echo "<td width='30'>". $row['nachname'] . "</td>";
-    echo "<td width='100'>". $row['email'] . "</td>";
+    echo "<td width='30'>". $bestellnummer . "</td>";
+    echo "<td width='30'>". $vorname . "</td>";
+    echo "<td width='30'>". $nachname . "</td>";
+    echo "<td width='100'>". $email . "</td>";
     echo '<td><a class="backlinks" href="index.php?page=backend&action=bestellung&bestellnummer='. $bestellnummer .'">';
     echo 'Bestellung ansehen';
     echo '</a></td>';
