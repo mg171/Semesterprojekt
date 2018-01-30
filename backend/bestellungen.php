@@ -25,7 +25,6 @@ include ('../db/userdata.php');
 
 echo '<a href="./produkt.php">Zur Produktübersicht</a><br><br>';
 
-
 echo '<h1>Bestellübersicht</h1>';
 
 $db = new PDO($dsn, $dbuser, $dbpass);
@@ -66,3 +65,5 @@ foreach ($result as $row) {
 }
     echo "</table>";
 ?>
+
+</html>
