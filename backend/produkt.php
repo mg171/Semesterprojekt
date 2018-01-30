@@ -23,9 +23,9 @@ if (!isset($_SESSION["login"]))
 
 include ('../db/userdata.php');
 
-echo '<a href="index.php?page=backend&action=produktneu">Neues Produkt einstellen</a><br><br>';
+echo '<a class="backlinks" href="index.php?page=backend&action=produktneu">Neues Produkt einstellen</a><br><br>';
 
-echo '<a href="index.php?page=backend&action=bestellungen">Bestellungen ansehen</a><br><br>';
+echo '<a class="backlinks" href="index.php?page=backend&action=bestellungen">Bestellungen ansehen</a><br><br>';
 
 echo '<h1>Produktübersicht</h1>';
 
@@ -73,10 +73,10 @@ foreach ($result as $row) {
     echo "<td width='50'>". $menge . "</td>";
     echo "<td width='50'>". $mindestbestand . "</td>";
     echo "<td width='50'>". $eancode . "</td>";
-    echo '<td><a href="index.php?page=backend&action=produktaendern&id='. $id .'">';
+    echo '<td><a class="backlinks" href="index.php?page=backend&action=produktaendern&id='. $id .'">';
     echo 'edit';
     echo '</a></td>';
-    echo '<td><a href="index.php?page=backend&action=produktloeschen&id='. $id .'">';
+    echo '<td><a class="backlinks" href="index.php?page=backend&action=produktloeschen&id='. $id .'">';
     echo 'delete';
     echo '</a></td>';
     echo "</tr>";

@@ -72,7 +72,20 @@ td.home {
 
 
 a {
+    text-decoration: none;
+    color: #4c6faf; }
+
+a.backlinks {
     text-decoration: none; }
+
+a.backlinks:link {
+    color: #4c6faf; }
+
+a.backlinks:visited {
+    color: #4c6faf; }
+
+a.backlinks:hover {
+    color: #212121; }
 
 p {
     font-size: 16px;

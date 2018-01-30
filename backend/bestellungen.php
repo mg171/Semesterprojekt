@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Onlineshop</title>
+    <title>Webshop Handy</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="https://use.fontawesome.com/2ab6c8da3b.js"></script>
@@ -23,7 +23,7 @@ if (!isset($_SESSION["login"]))
 
 include ('../db/userdata.php');
 
-echo '<a href="./produkt.php">Zur Produktübersicht</a><br><br>';
+echo '<a class="backlinks" href="./produkt.php">Zur Produktübersicht</a><br><br>';
 
 echo '<h1>Bestellübersicht</h1>';
 
@@ -56,8 +56,8 @@ foreach ($result as $row) {
     echo "<td width='30'>". $row['vorname'] . "</td>";
     echo "<td width='30'>". $row['nachname'] . "</td>";
     echo "<td width='100'>". $row['email'] . "</td>";
-    echo '<td><a href="index.php?page=backend&action=bestellung&bestellnummer='. $bestellnummer .'">';
-    echo 'ansehen';
+    echo '<td><a class="backlinks" href="index.php?page=backend&action=bestellung&bestellnummer='. $bestellnummer .'">';
+    echo 'Bestellung ansehen';
     echo '</a></td>';
     echo "</tr>";
     echo "<br>";
