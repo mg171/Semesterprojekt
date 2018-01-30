@@ -19,7 +19,7 @@ if ($_GET["product"] == "show") {
         echo $row['beschreibung'] . "<br></div><br>";
 
         if ($row['menge']>=5) { echo "Verfügbarkeit: hoch"; }
-        else if ($row['menge']==0) { echo "Produkt ist nicht verfügbar";}
+        else if ($row['menge']==0) { echo "Dieses Produkt ist nicht verfügbar";}
         else { echo "Verfügbarkeit: gering";}
 
 
