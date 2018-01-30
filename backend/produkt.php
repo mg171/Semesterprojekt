@@ -74,15 +74,15 @@ foreach ($result as $row) {
     echo "<td width='50'>". $row['mindestbestand'] . "</td>";
     echo "<td width='50'>". $row['eancode'] . "</td>";
     echo '<td><a href="index.php?page=backend&action=produktaendern&id='. $id .'">';
-        echo 'edit';
-        echo '</a></td>';
+    echo 'edit';
+    echo '</a></td>';
     echo '<td><a href="index.php?page=backend&action=produktloeschen&id='. $id .'">';
     echo 'delete';
     echo '</a></td>';
     echo "</tr>";
     echo "<br>";
 
-echo "</table>";
 }
+    echo "</table>";
 ?>
 </body>
