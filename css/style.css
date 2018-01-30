@@ -75,6 +75,9 @@ a {
     text-decoration: none;
     color: #4c6faf; }
 
+a:hover {
+    color: #212121; }
+
 a.backlinks {
     text-decoration: none; }
 
