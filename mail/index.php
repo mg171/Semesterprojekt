@@ -11,7 +11,21 @@
     $from .= "From: Handy Webshop <handy.webshop@gmail.com>\n";
     $from .= "Reply-To: handy.webshop@gmail.com\n";
     $from .= "Content-Type: text/html\n";
-    $text .= "<h1>Bestellbestätigung</h1> <p>Vielen Dank für Ihre Bestellung!</p>";
+    $text .= "<h1>Bestellbestätigung</h1> 
+              <p>Vielen Dank für Ihre Bestellung! <br>
+              Alle Preise verstehen sich inkl. 19% Mwst. <br>
+              Lieferung erfolgt binnen 3 Werktagen nach Zahlungseingang. <br>
+              Wir erwarten Ihre Zahlung binnen von 10 Tagen per Überweisung oder Kreditkarte auf unser Konto. <br>
+              Überweisungen richten Sie bitte mit ihrem Namen als Verwendungszweck an <br>
+              <br>
+              Bank: HdM-Bank <br>
+              IBAN: DE12345678765432 <br>
+              Inhaber: Webshop Handy <br>
+              <br>
+
+              Mit freundlichen Grüßen, <br>
+              Webshop Handy | Marcel, Monique und Lena
+              </p>";
 
 
     mail($empf, $betreff, $text, $from);
