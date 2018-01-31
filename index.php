@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
-    <title>Onlineshop</title>
+    <title>Webshop Handy</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" media="screen"/>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="https://use.fontawesome.com/2ab6c8da3b.js"></script>
