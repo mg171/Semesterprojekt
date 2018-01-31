@@ -8,33 +8,44 @@ body, html {
     width: 100%;
     background-color: #ffffff;  }
 
-/* Footer */
+/*Footer*/
 
 
-.footer {
-    position: sticky;
-    left: 0;
+#footer {
+    position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: black;
-    color: white;
+    height: 40px;
     text-align: center;
+    background-color: #262626;
+    color: white;
 }
 
-.footer ul {
+
+.quicklinks {
+    float: left;
+    margin-left: 3%;}
+
+.ul, li {
     list-style: none;
 }
 
-.quicklinks {
-    float: left; }
-
 .adresse {
-   float: left; }
+    float: left;
+}
 
 .kontakt {
-    }
+    float: right;
+    margin-right: 3%;
+}
 
-/* Footer Ende */
+.footertable {
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/*Footer*/
 
 h1 {
     font-weight: 300;

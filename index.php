@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
     <title>Onlineshop</title>
@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="https://use.fontawesome.com/2ab6c8da3b.js"></script>
 </head>
+
 
 <body>
 
@@ -75,40 +76,19 @@ else
 }
 
 
+
+
 ?>
-
 </body>
+<br>
+<br>
+<br>
 
-<!--
-
-<footer class="footer">
-    <div class="quicklinks">
-        <h4>Quick Links</h4>
-        <ul>
-            <li><a href="#">Impressum</a></li>
-            <li><a href="#">AGB</a></li>
-            <li><a href="#">Kontakt</a></li>
-        </ul>
-    </div>
-
-    <div class="adresse">
-        <h4>Adresse</h4>
-        <p>
-            Webshop Handy <br>
-            Nobelstraße 10 <br>
-            70569 Stuttgart
-        </p>
-    </div>
-
-    <div class="kontakt">
-        <h4>Kontakt</h4>
-        <p>
-            Telefon: 0171 1980101 <br>
-            Telefax: 0711 8923 11
-        </p>
-    </div>
+<footer>
+    <?php
+    include "footer/footer.php";
+    ?>
 </footer>
 
--->
 
-</html>
+        </html>
