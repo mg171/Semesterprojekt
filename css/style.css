@@ -71,6 +71,10 @@ h3 {
     font-weight: 400;
     font-size: 12px; }
 
+h4 {
+    font-weight: bold;
+    font-size: 18px; }
+
 .bold {
     font-weight: 500; }
 
@@ -120,8 +124,9 @@ p {
     z-index: 1; }
 
 .navbarmiddle {
-    margin-left: 25%;
-    margin-right: 25%; }
+    margin-left: 35%;
+    margin-right: 25%;
+    float: left; }
 
 .navbar a {
     display: inline-block;
@@ -149,6 +154,9 @@ p {
 .navbar a.active {
     background-color: #e3e3e3;
     color: #000;  }
+
+.navbarright {
+    text-align: right; }
 
 /* Ende Navigationsleiste */
 

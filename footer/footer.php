@@ -5,15 +5,17 @@
 
     <table class="footertable">
         <td>
-            <a style="color: white" href="impressum/impressum.html">| Impressum |</a>
+            <a style="color: white" href="index.php?page=login&action=login"> Adminlogin |</a>
         </td>
         <td>
-            <a style="color: white" href="agb/agb.html">| AGB |</a>
+            <a style="color: white" href="index.php?page=impressum&action=impressum">| Impressum |</a>
+        </td>
+        <td>
+            <a style="color: white" href="index.php?page=agb&action=agb">| AGB |</a>
         </td>
         <td>
             <a style="color: white" href="https://goo.gl/maps/1G3ebyVBuoo" target="_blank">| Adresse |</a>
         </td>
-        <td></td>
         <td>
             Telefon: 0171 1980101
         </td>

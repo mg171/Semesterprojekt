@@ -32,9 +32,10 @@
             </div>
         </div>";
 
-        echo '<a href="index.php?page=login&action=login"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>';
-        echo '<a href="index.php?page=warenkorb"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Warenkorb</a>';
         echo '</div>';
+        echo '<div class="navbarright">
+                <a href="index.php?page=warenkorb"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Warenkorb</a>
+                </div>';
 
 
     ?>
@@ -64,6 +65,12 @@ if (isset($_GET["page"]) ) {
             break;
         case "kasse":
             include "kasse/index.php";
+            break;
+        case "agb":
+            include "agb/agb.html";
+            break;
+        case "impressum":
+            include "impressum/impressum.html";
             break;
         default:
             include "start.php";
