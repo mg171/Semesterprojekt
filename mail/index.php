@@ -4,10 +4,9 @@
 <title>Bestellung</title>
     </head>
     <body>
-<h1>Vielen Dank für Ihre Bestellung bei Handy.Shop!</h1>
     <?php
 
-    $empf = "lenapopp8@gmail.com";
+    $empf = $_POST["email"];
     $betreff ="Bestellbestätigung";
     $from .= "From: Handy Webshop <handy.webshop@gmail.com>\n";
     $from .= "Reply-To: handy.webshop@gmail.com\n";

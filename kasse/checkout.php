@@ -49,6 +49,7 @@ $db->exec($sql);
 
 }
 
+include "../mail/index.php";
 unset($_SESSION['warenkorb']);
 header('Location: ../index.php?page=kasse&action=bestaetigung');
 
