@@ -64,7 +64,7 @@ if (isset($_SESSION['warenkorb']))
             <br><br>
 
 
-            <input class="bestellen" type="submit" value="Jetzt kostenpflichtig bestellen">
+            <input class="bestellen" type="submit" value="Jetzt kostenpflichtig bestellen"><br><br>
         </form>
 
     </div>

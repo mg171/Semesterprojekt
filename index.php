@@ -17,7 +17,7 @@
 
     <?php
 
-        echo '<img src="images/logo/logo_navbar.jpg" alt="Logo">';
+        echo '<img src="images/logo/smartphone.png" alt="Logo">';
         echo '<div class="navbarmiddle">';
         echo '<a href="index.php">Startseite</a>';
         echo "<div class='dropdown'>
