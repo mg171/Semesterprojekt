@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Onlineshop</title>
+    <title>Webshop Handy</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="https://use.fontawesome.com/2ab6c8da3b.js"></script>
@@ -37,3 +37,6 @@ echo '<a href="produktloeschendo.php?id='.$id .'">Ja, Produkt löschen.</a>
         <br>
         <br>
       <a href="./produkt.php">Nein, zurück zur Produktübersicht.</a>';
+
+?>
+</html>

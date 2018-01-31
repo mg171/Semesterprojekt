@@ -7,4 +7,3 @@ $id = $_POST['id'];
 $_SESSION['warenkorb'][] = array('id' => "$id", 'anzahl' => "$anzahl");
 
 header('Location: ../index.php?page=warenkorb');
-?>

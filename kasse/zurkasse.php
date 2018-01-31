@@ -6,7 +6,7 @@ include_once ('db/userdata.php');
 if (isset($_SESSION['warenkorb']))
 {
     ?>
-    <div>
+    <div><h1>Zusammenfassung</h1><br>
         <form action="./kasse/checkout.php" method="post">
             <table>
                 <tr>
@@ -38,18 +38,20 @@ if (isset($_SESSION['warenkorb']))
 
             <br><br>
 
-            Vorname: <br><input class="checkout" type='text' name="vorname" required><br><br>
-            Nachname: <br><input type="text" name="nachname" required><br><br>
-            E-Mail-Adresse: <br><input type="text" name="email" required><br><br>
-            Straße: <br><input type="text" name="strasse" required><br><br>
-            Hausnummer: <br><input type="text" name="hausnummer" required><br><br>
-            Postleitzahl: <br><input type="text" name="plz" required><br><br>
-            Stadt: <br><input type="text" name="stadt" required><br>
+            <h3>Rechnungsdetails</h3><br>
+
+            Vorname <br><input class="checkout" type='text' name="vorname" required><br><br>
+            Nachname <br><input type="text" name="nachname" required><br><br>
+            E-Mail-Adresse <br><input type="text" name="email" required><br><br>
+            Straße <br><input type="text" name="strasse" required><br><br>
+            Hausnummer <br><input type="text" name="hausnummer" required><br><br>
+            Postleitzahl <br><input type="text" name="plz" required><br><br>
+            Stadt <br><input type="text" name="stadt" required><br>
 
             <br><br>
 
 
-            <h3>Zahlungsart</h3><br>
+            <h3>Zahlungsart wählen</h3><br>
             <input type="radio" id="nn" name="zahlmethode" value="Rechnung" required>
             <label for="mc"> Rechnung</label><br>
             <input type="radio" id="nn" name="zahlmethode" value="Kreditkarte" required>

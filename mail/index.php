@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
 <title>Bestellung</title>
-    </head>
-    <body>
-    <?php
+</head>
+<body>
+<?php
 
     $empf = $_POST["email"];
     $betreff ="Bestellbestätigung";
@@ -30,6 +30,7 @@
 
     mail($empf, $betreff, $text, $from);
 
-    ?>
-    </body>
+?>
+
+</body>
 </html>

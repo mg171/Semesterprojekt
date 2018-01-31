@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Onlineshop</title>
+    <title>Webshop Handy</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="https://use.fontawesome.com/2ab6c8da3b.js"></script>
@@ -60,36 +60,6 @@ catch (PDOException $e) {
 
 echo '<br><a href="./produkt.php"> Zurück zur Produktübersicht</a>';
 
-/* include_once ("../db/userdata.php");
-$db = new PDO($dsn, $dbuser, $dbpass);
-
-$stmt = $db->query("SELECT * FROM produkt WHERE id=".$id);
-$stmt->execute();
-$result = $stmt->fetchAll();
-foreach ($result as $row) {
-    echo '
-    <form action="produktaenderndo.php" method="post">
-        <input type="hidden" name="id" value="' . $id . '">
-        <br>
-        Produktname: <input type="text" name="name" value="' . $row["artikelname"] . '">
-        <br>
-        Marken ID: <input type="text" name="marke_id" value="' . $row["marke_id"] . '">
-        <br>
-        Beschreibung: <input type="text" name="beschreibung" value="' . $row["beschreibung"] . '">
-        <br>
-        Preis: <input type="text" name="preis" value="' . $row["preis"] . '">
-        <br>
-        Bild: <input type="file" name="bild" value="'. $row['bild'] .'">
-        <br>
-        Menge: <input type="text" name="menge" value="' . $row["menge"] . '">
-        <br>
-        Mindestbestand: <input type="text" name="mindestbestand" value="' . $row["mindestbestand"] . '">
-        <br>
-        EANCode: <input type="text" name="eancode" value="' . $row["eancode"] . '">
-        <br>
-        <br>
-        <input type="submit">
-    </form>
-';
-}
 ?>
+
+</html>
