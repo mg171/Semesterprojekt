@@ -38,13 +38,13 @@ if (isset($_SESSION['warenkorb']))
 
             <br><br>
 
-            Vorname: <input class="checkout" type='text' name="vorname" required><br>
-            Nachname: <input type="text" name="nachname" required><br>
-            E-Mail-Adresse: <input type="text" name="email" required><br>
-            Straße: <input type="text" name="strasse" required><br>
-            Hausnummer: <input type="text" name="hausnummer" required><br>
-            Postleitzahl: <input type="text" name="plz" required><br>
-            Stadt: <input type="text" name="stadt" required><br>
+            Vorname: <br><input class="checkout" type='text' name="vorname" required><br><br>
+            Nachname: <br><input type="text" name="nachname" required><br><br>
+            E-Mail-Adresse: <br><input type="text" name="email" required><br><br>
+            Straße: <br><input type="text" name="strasse" required><br><br>
+            Hausnummer: <br><input type="text" name="hausnummer" required><br><br>
+            Postleitzahl: <br><input type="text" name="plz" required><br><br>
+            Stadt: <br><input type="text" name="stadt" required><br>
 
             <br><br>
 

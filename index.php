@@ -96,6 +96,4 @@ else
     include "footer/footer.php";
     ?>
 </footer>
-
-
-        </html>
+</html>
