@@ -10,7 +10,7 @@
         body { margin: 30px; }
     </style>
 </head>
-<body>
+
 <?php
 session_start();
 
@@ -23,11 +23,9 @@ if (!isset($_SESSION["login"]))
 
 include ('../db/userdata.php');
 
-echo '<a href="index.php?page=backend&action=produktneu">Neues Produkt einstellen</a><br><br>';
+echo '<a class="backlinks" href="index.php?page=backend&action=produktneu">Neues Produkt einstellen</a><br><br>';
 
-echo '<a href="index.php?page=backend&action=bestellungen">Bestellungen ansehen</a><br><br>';
-
-
+echo '<a class="backlinks" href="index.php?page=backend&action=bestellungen">Bestellungen ansehen</a><br><br>';
 
 echo '<h1>Produktübersicht</h1>';
 
@@ -39,6 +37,7 @@ $result = $stmt->fetchAll();
 
 foreach ($result as $row) {
 
+
     echo "<table border='1px solid black'>";
     echo "<tr>
                     <th>ID</th>
@@ -47,11 +46,12 @@ foreach ($result as $row) {
                     <th>Beschreibung</th>
                     <th>Preis</th>
                     <th>Menge</th>
-                    <th>Min.Bestand</th>
+                    <th>Mindestbestand</th>
                     <th>EAN</th>
-                    <th><i class=\"fa fa-pencil-square-o\" aria-hidden=\"true\"></i></th>
-                    <th><i class=\"fa fa-trash\" aria-hidden=\"true\"></i></th>
+                    <th><i class='fa fa-pencil-square-o' aria-hidden='true'></i></th>
+                    <th><i class='fa fa-trash' aria-hidden='true'></i></th>
                 </tr>";
+
 
     $id = $row['id'];
     $artikelname = $row['artikelname'];
@@ -65,24 +65,26 @@ foreach ($result as $row) {
 
 
     echo "<tr>";
-    echo "<td width='50'>". $row['id'] . "</td>";
-    echo "<td width='100'>". $row['artikelname'] . "</td>";
-    echo "<td width='50'>". $row['marke_id'] . "</td>";
-    echo "<td width='300'>". $row['beschreibung'] . "</td>";
-    echo "<td width='50'>". $row['preis'] . "€</td>";
-    echo "<td width='50'>". $row['menge'] . "</td>";
-    echo "<td width='50'>". $row['mindestbestand'] . "</td>";
-    echo "<td width='50'>". $row['eancode'] . "</td>";
-    echo '<td><a href="index.php?page=backend&action=produktaendern&id='. $id .'">';
-        echo 'edit';
-        echo '</a></td>';
-    echo '<td><a href="index.php?page=backend&action=produktloeschen&id='. $id .'">';
+    echo "<td width='50'>". $id . "</td>";
+    echo "<td width='100'>". $artikelname . "</td>";
+    echo "<td width='50'>". $marke_id . "</td>";
+    echo "<td width='300'>". $beschreibung . "</td>";
+    echo "<td width='50'>". $preis . "€</td>";
+    echo "<td width='50'>". $menge . "</td>";
+    echo "<td width='50'>". $mindestbestand . "</td>";
+    echo "<td width='50'>". $eancode . "</td>";
+    echo '<td><a class="backlinks" href="index.php?page=backend&action=produktaendern&id='. $id .'">';
+    echo 'edit';
+    echo '</a></td>';
+    echo '<td><a class="backlinks" href="index.php?page=backend&action=produktloeschen&id='. $id .'">';
     echo 'delete';
     echo '</a></td>';
     echo "</tr>";
     echo "<br>";
 
-echo "</table>";
 }
+    echo "</table>";
 ?>
-</body>
+
+
+</html>

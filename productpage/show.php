@@ -16,8 +16,13 @@ if ($_GET["product"] == "show") {
         echo "<br><br><h2>" . $row['artikelname'] . "</h2><br><br>";
         echo "<div class='preis'>" . $row['preis'] . " €" . "</div><br><br>";
         echo "<div class='productinfo'>Eancode: " . $row['eancode'] . "<br><br>";
-        echo $row['beschreibung'] . "<br></div>";
-        /* if ($row['menge']>=5) { echo ""} else if ... else */
+        echo $row['beschreibung'] . "<br></div><br>";
+
+        if ($row['menge']>=5) { echo "Verfügbarkeit: hoch"; }
+        else if ($row['menge']==0) { echo "Dieses Produkt ist nicht verfügbar";}
+        else { echo "Verfügbarkeit: gering";}
+
+
         echo "</div><br><br>";
         ?>
         <form action='./warenkorb/hinzufuegen.php' method='post'>
