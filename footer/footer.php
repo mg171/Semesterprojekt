@@ -5,7 +5,7 @@
 
     <table class="footertable">
         <td>
-            <a style="color: white" href="index.php?page=login&action=login"> Adminlogin |</a>
+            <a style="color: white" href="index.php?page=login&action=login">| Adminlogin |</a>
         </td>
         <td>
             <a style="color: white" href="index.php?page=impressum&action=impressum">| Impressum |</a>

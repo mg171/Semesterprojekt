@@ -59,7 +59,7 @@ if (isset($_SESSION['warenkorb']))
 
             <h3>Rechtliches</h3><br>
             <input type="radio" id="agb" name="agb" value="agb" required>
-            <label for="mc"> Hiermit akzeptiere ich die <a href="index.php?page=agb&action=agb">AGB</a>.</label>
+            <label for="mc"> Hiermit akzeptiere ich die <a href="index.php?page=agb&action=agb" target="_blank">AGB</a>.</label>
 
             <br><br>
 
