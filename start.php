@@ -3,7 +3,7 @@
 <h1 id='h1' class='bold'>Smartphone kaufen</h1><br>
 
 
-    <!-- Verlinkungen der Marken mithilfe von Routing der Index.php -->
+    <!-- Verlinkungen der Handymarken-Images mit Link zur Produktkategorie, Ausgabe in Tabellenform -->
 
 <table>
     <tr>
