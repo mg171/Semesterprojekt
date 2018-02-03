@@ -14,7 +14,7 @@
     $from .= "Reply-To: handy.webshop@gmail.com\n";
     $from .= "Content-Type: text/html\n";
     $text .= "<h1>Bestellbest&auml;tigung</h1> 
-              <p>Vielen Dank für Ihre Bestellung! <br>
+              <p>Vielen Dank f&uuml;r Ihre Bestellung! <br>
               Alle Preise verstehen sich inkl. 19% Mwst. <br>
               Lieferung erfolgt binnen 3 Werktagen nach Zahlungseingang. <br>
               Wir erwarten Ihre Zahlung binnen von 10 Tagen per &Uuml;berweisung oder Kreditkarte auf unser Konto. <br>
@@ -23,9 +23,9 @@
               Bank: HdM-Bank <br>
               IBAN: DE12345678765432 <br>
               Inhaber: Webshop Handy <br>
-              Betrag: ".$preisgesamt. "<br>
+              Betrag: ".$preisgesamt. "<br> <br>
 
-              Mit freundlichen Gr&uuml;ßen, <br>
+              Mit freundlichen Gr&uuml;&szlig;en, <br>
               Webshop Handy | Marcel, Monique und Lena
               </p>";
 
