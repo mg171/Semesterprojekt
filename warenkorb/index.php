@@ -46,7 +46,7 @@
                     <?php }
                     ?>
                 </table><br>
-                <?php echo "Der Gesamtbetrag des Warenkorbs beträgt momentan: " .$preisgesamt ."€"; ?>
+                <?php echo "Der Gesamtbetrag des Warenkorbs beträgt aktuell " .$preisgesamt ."€"; ?>
                 <br><br>
 
                 <input class="warenkorb" type="submit" value="aktualisieren">

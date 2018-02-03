@@ -21,11 +21,13 @@ if (isset($_SESSION['warenkorb']))
 
                 <?php
                 $db = new PDO($dsn, $dbuser, $dbpass);
+                $preisgesamt = 0;
                 foreach ($_SESSION['warenkorb'] as $key => $cart){
-
 
                     $stmt = $db->query("SELECT * FROM produkt WHERE id='".$cart['id']."'");
                     $result = $stmt->fetch();
+                    $prod_gesamt = $result['preis']*$cart['anzahl'];
+                    $preisgesamt = $preisgesamt + $prod_gesamt;
                     ?>
 
                     <!-- Hier werden die Preise der Produkte zusammengerechnet und ausgegeben -->
@@ -36,13 +38,14 @@ if (isset($_SESSION['warenkorb']))
                             </a></td>
                         <td><?=$result['preis'].'€';?></td>
                         <td><?=$cart['anzahl'];?></td>
-                        <td><?=$result['preis']*$cart['anzahl'].'€';?></td>
+                        <td><?=$prod_gesamt.'€';?></td>
                     </tr>
                 <?php }
                 ?>
-            </table>
+            </table><br>
+            <?php echo "Der Gesamtbetrag des Warenkorbs beträgt " .$preisgesamt ."€"; ?>
 
-            <br><br>
+            <br><br><br>
 
             <!-- Formular zur Eingabe der persönlichen Daten des Kunden -->
 
