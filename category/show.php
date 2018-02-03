@@ -2,7 +2,7 @@
 
 <?php
 
-/* Ausgabe Apple */
+// Ausgabe Apple
 
 if ($_GET["category"] == "apple") {
 
