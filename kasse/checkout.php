@@ -24,6 +24,7 @@ $sql = "SELECT MAX(bestellnummer) + 1 FROM bestellungen";
 $stmt = $db->prepare($sql);
 $stmt->execute();
 $newbestnr = $stmt->fetchColumn();
+$result = $stmt->fetch();
 $preisgesamt = 0;
 
 
@@ -31,7 +32,7 @@ $preisgesamt = 0;
 
 foreach ($_SESSION['warenkorb'] as $key => $cart) {
 
-    $prod_gesamt = $cart['id']*$cart['anzahl'];
+    $prod_gesamt = $result['preis']*$cart['anzahl'];
     $preisgesamt = $preisgesamt + $prod_gesamt;
 
 $produktid = $cart['id'];
