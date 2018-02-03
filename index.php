@@ -14,7 +14,7 @@
 
 <br>
 
-<!-- Navigationsleiste mit Logo, Dropdown und Warenkorb-Verlinkung -->
+<!-- Navigationsleiste mit Logo, Startseite, Dropdown-Menü und Warenkorb-Verlinkung -->
 
 <div class="navbar">
 
