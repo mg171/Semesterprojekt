@@ -2,7 +2,7 @@
 
 if ($_GET["product"] == "show") {
 
-    // SQL Statement zur Ausgabe von Proukten wo die ID mit der aus der Tabelle Produkt übereinstimmt
+    // SQL Statement zur Ausgabe von Produkten, bei denen die Variable $id mit der aus der Tabelle produkt übereinstimmt
 
     $id = $_GET['id'];
     include_once('db/userdata.php');
