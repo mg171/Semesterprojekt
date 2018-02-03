@@ -8,8 +8,8 @@ body, html {
     width: 100%;
     background-color: #ffffff;  }
 
-/*Footer*/
 
+/* Footer */
 
 #footer {
     position: fixed;
@@ -18,34 +18,30 @@ body, html {
     height: 50px;
     text-align: center;
     background-color: #262626;
-    color: white;
-}
-
+    color: white; }
 
 .quicklinks {
     float: left;
-    margin-left: 3%;}
+    margin-left: 3%; }
 
 .ul, li {
-    list-style: none;
-}
+    list-style: none; }
 
 .adresse {
-    float: left;
-}
+    float: left; }
 
 .kontakt {
     float: right;
-    margin-right: 3%;
-}
+    margin-right: 3%; }
 
 .footertable {
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; }
 
-}
+/* Footer Ende */
 
-/*Footer*/
+
+/* Überschriften, Text, Tabellen, Links */
 
 h1 {
     font-weight: 300;
@@ -109,9 +105,10 @@ p {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;  }
 
+/* Überschriften, Text, Tabellen, Links Ende */
+
 
 /* Navigationsleiste */
-
 
 .navbar {
     /* overflow: hidden; */
@@ -160,7 +157,8 @@ p {
 
 /* Ende Navigationsleiste */
 
-/* dropdown menu */
+
+/* Dropdown Menü */
 
 .dropdown {
     position: relative;
@@ -207,9 +205,10 @@ p {
 #drop-link-1 {
     border-bottom: 1px solid #e3e3e3;  }
 
-/* dropdown menu ende */
+/* Dropdown Menü Ende */
 
-/* Productshots + Hover Anfang */
+
+/* Productshots + Hover */
 
 #grid {
     margin-top: 5%;
@@ -264,7 +263,6 @@ img#pagephone {
 
 .hovereffect a, .hovereffect p {
     color: #262626;
-
     text-align: center;
     display: flex;
     align-items: center;
@@ -289,10 +287,10 @@ img#pagephone {
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);  }
 
-/* Hover Productshots Ende */
+/* Productshots + Hover Ende */
+
 
 /* Page Wrapper */
-
 
 #homewrapper {
     display: block;
@@ -337,6 +335,7 @@ img#pagephone {
 .productinfo {
     font-size: 12px; }
 
+/* brand icons style landing page Ende */
 
 
 /* Input Types */
@@ -350,7 +349,7 @@ input[type=number].anzahl {
     padding: 12px;
     border: 1px solid #e3e3e3;
     border-radius: 2px;
-    font-size: 15px;}
+    font-size: 15px; }
 
 
 input[type="submit"].warenkorb {
@@ -401,11 +400,10 @@ input [type="submit"] {
 
 input[type="submit"]:hover {background: #4c6faf; color: #FFF;}
 
-/* Login Style */
+/* Input Types Ende */
 
-/* form {
-    border: 3px solid #f1f1f1;
-    margin: 150px;  } */
+
+/* Login Style */
 
 input[type=text].loginform, input[type=password].loginform, input[type=submit].loginform {
     margin-left: 20%;
@@ -417,3 +415,5 @@ input[type=text].loginform, input[type=password].loginform, input[type=submit].l
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;  }
+
+/* Login Style Ende */
