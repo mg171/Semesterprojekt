@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-//Berechtigung prüfen
+// Berechtigung prüfen
 
 if (!isset($_SESSION["login"]))
 {
@@ -23,7 +23,7 @@ catch (PDOException $p)
     die();
 }
 
-// Neues Produkt/Bild in Datenbank einfügen
+// Neues Produkt in die Datenbank einfügen
 
 $bild = $_FILES['bild']['name'];
 
