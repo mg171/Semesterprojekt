@@ -22,6 +22,7 @@
 
                     <?php
                     $db = new PDO($dsn, $dbuser, $dbpass);
+                    $preisgesamt = 0;
                     foreach ($_SESSION['warenkorb'] as $key => $cart){
 
                         // Ausgabe der Daten auf Basis der ID aus Tabelle Produkt
@@ -29,6 +30,8 @@
                         $stmt = $db->query("SELECT * FROM produkt WHERE id='".$cart['id']."'");
                         $result = $stmt->fetch();
                         $menge = $key;
+                        $prod_gesamt = $result['preis']*$cart['anzahl'];
+                        $preisgesamt = $preisgesamt + $prod_gesamt;
                         ?>
                         <tr>
                             <td><a href="?page=product&product=show&id=<?php echo $result['id']?>">
@@ -36,13 +39,15 @@
                                 </a></td>
                             <td><?=$result['preis'].'€';?></td>
                             <td><input type="number" name="anzahl[<?=$menge;?>]" value="<?=$cart['anzahl'];?>" min="1"</td>
-                            <td><?=$result['preis']*$cart['anzahl'].'€';?></td>
+                            <td><?=$prod_gesamt.'€';?></td>
                             <td><input type="checkbox" name="loeschen[]" value="<?=$key;?>"></td>
                             <input type="hidden" name="menge[]" value="<?=$menge;?>"
                         </tr>
                     <?php }
                     ?>
                 </table>
+                <?php echo "Der Gesamtbetrag des Warenkorbs beträgt momentan: " .$preisgesamt ."€"; ?>
+                </br>
 
                 <input class="warenkorb" type="submit" value="aktualisieren">
             </form>
@@ -52,7 +57,6 @@
 
         <form action="?page=kasse&action=zurkasse" method="post">
             <input class="warenkorb" type="submit" value="Zur Kasse">
-
         </form>
 
     <?php }
