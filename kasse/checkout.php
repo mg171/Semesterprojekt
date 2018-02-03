@@ -24,12 +24,15 @@ $sql = "SELECT MAX(bestellnummer) + 1 FROM bestellungen";
 $stmt = $db->prepare($sql);
 $stmt->execute();
 $newbestnr = $stmt->fetchColumn();
+$preisgesamt = 0;
 
 
 // For Each Schleife zum Bestimmen von Variablen
 
 foreach ($_SESSION['warenkorb'] as $key => $cart) {
 
+    $prod_gesamt = $cart['id']*$cart['anzahl'];
+    $preisgesamt = $preisgesamt + $prod_gesamt;
 
 $produktid = $cart['id'];
 $anzahl = $cart['anzahl'];

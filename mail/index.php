@@ -23,7 +23,7 @@
               Bank: HdM-Bank <br>
               IBAN: DE12345678765432 <br>
               Inhaber: Webshop Handy <br>
-              <br>
+              Betrag: ".$preisgesamt. "<br>
 
               Mit freundlichen Grüßen, <br>
               Webshop Handy | Marcel, Monique und Lena
