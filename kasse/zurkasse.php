@@ -43,7 +43,7 @@ if (isset($_SESSION['warenkorb']))
                 <?php }
                 ?>
             </table><br>
-            <?php echo "Der Gesamtbetrag des Warenkorbs beträgt " .$preisgesamt ."€"; ?>
+            <?php echo "Der Gesamtbetrag des Warenkorbs beträgt " .$preisgesamt ."€."; ?>
 
             <br><br><br>
 
