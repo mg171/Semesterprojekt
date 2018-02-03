@@ -14,7 +14,7 @@
 <?php
 session_start();
 
-//Berechtigung prüfen
+// Berechtigung prüfen
 
 if (!isset($_SESSION["login"]))
 {
