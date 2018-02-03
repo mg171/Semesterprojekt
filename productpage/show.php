@@ -1,5 +1,8 @@
 <?php
+
 if ($_GET["product"] == "show") {
+
+    // SQL Statement zur Ausgabe von Proukten wo die ID mit der aus der Tabelle Produkt übereinstimmt
 
     $id = $_GET['id'];
     include_once('db/userdata.php');
@@ -7,6 +10,9 @@ if ($_GET["product"] == "show") {
     $sql = "SELECT * FROM produkt WHERE id = " . $id;
     $prod = $pdo->query($sql);
     $result = $prod->fetch();
+
+    // Foreach Schleife zur Ausgabe der Produkte
+
     foreach ($pdo->query($sql) as $row) {
 
         $bildpfad = $row['bild'];
@@ -25,6 +31,9 @@ if ($_GET["product"] == "show") {
 
         echo "</div><br><br>";
         ?>
+
+        <!-- Formular zum Hinzufügen von Proukt in den Warenkorb -->
+
         <form action='./warenkorb/hinzufuegen.php' method='post'>
             <input class='anzahl' type='number' name='anzahl' min='1' step='1' value='1'>
             <input type='hidden' name='id' value='<?php echo $result["id"]; ?>'>

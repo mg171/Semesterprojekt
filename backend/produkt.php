@@ -29,6 +29,8 @@ echo '<a class="backlinks" href="index.php?page=backend&action=bestellungen">Bes
 
 echo '<h1>Produktübersicht</h1>';
 
+// Alle Daten aus der SQL-Tabelle Produkte ziehen um sie in einer Tabelle im Backend auszugeben
+
 $db = new PDO($dsn, $dbuser, $dbpass);
 $stmt = $db->query("SELECT * FROM produkt");
 $stmt->execute();

@@ -18,13 +18,15 @@ catch (PDOException $p)
 }
 
 
+// Aktuelle Bestellnummer wird um 1 erhöht
+
 $sql = "SELECT MAX(bestellnummer) + 1 FROM bestellungen";
 $stmt = $db->prepare($sql);
 $stmt->execute();
 $newbestnr = $stmt->fetchColumn();
 
 
-// Bestellungen in Datenbank
+// For Each Schleife zum Bestimmen von Variablen
 
 foreach ($_SESSION['warenkorb'] as $key => $cart) {
 
@@ -39,6 +41,9 @@ $hausnummer = $_POST["hausnummer"];
 $stadt = $_POST["stadt"];
 $plz = $_POST["plz"];
 $zahlmethode = $_POST['zahlmethode'];
+
+
+    // Daten aus vorgelagertem Formular werden in SQL Tabelle eingetragen
 
 
 $sql = "INSERT INTO bestellungen (best_id, bestellnummer, vorname, nachname, email, strasse, hausnummer,

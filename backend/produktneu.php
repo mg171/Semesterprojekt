@@ -25,6 +25,8 @@ include ("../db/userdata.php");
 
 echo '<h2>Neues Produkt einstellen</h2><br>';
 
+// Formular zum Eintragen eines neuen Produktes
+
 echo'
     <form action="produktneudo.php" method="post" enctype="multipart/form-data">
     Artikelname:<br><input type="text" name="artikelname"><br><br>

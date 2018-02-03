@@ -23,6 +23,7 @@ catch (PDOException $p)
     die();
 }
 
+// Neues Produkt/Bild in Datenbank einfügen
 
 $bild = $_FILES['bild']['name'];
 
@@ -46,6 +47,8 @@ echo "<br><br>";
 
 echo '<a href="index.php?page=backend&action=produkt">Zurück zur Produktübersicht</a><br><br>';
 
+
+// if Schleife zum Erkennen von exaktem Fehler
 
 if(!$stmt->execute()){
     echo("fehler");

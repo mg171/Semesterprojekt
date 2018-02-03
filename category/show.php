@@ -10,6 +10,8 @@ if ($_GET["category"] == "apple") {
 
     include_once("db/userdata.php");
 
+    // SQL-Statement zur Ausgabe von Produkten mit Marken_ID = 1
+
     $pdo = new PDO($dsn, $dbuser, $dbpass);
 
     $sql = "SELECT * FROM produkt WHERE marke_id = 1";
@@ -27,7 +29,7 @@ if ($_GET["category"] == "apple") {
 }
 
 
-/* Ausgabe Samsung */
+// Ausgabe Samsung
 
 if ($_GET["category"] == "samsung") {
 
@@ -52,7 +54,7 @@ if ($_GET["category"] == "samsung") {
 }
 
 
-/* Ausgabe Google */
+// Ausgabe Google
 
 if ($_GET["category"] == "google") {
 
@@ -77,7 +79,7 @@ if ($_GET["category"] == "google") {
 }
 
 
-/* Ausgabe Huawei */
+// Ausgabe Huawei
 
 if ($_GET["category"] == "huawei") {
 
@@ -102,7 +104,7 @@ if ($_GET["category"] == "huawei") {
 }
 
 
-/* Ausgabe Motorola */
+// Ausgabe Motorola
 
 if ($_GET["category"] == "motorola") {
 
@@ -127,7 +129,7 @@ if ($_GET["category"] == "motorola") {
 }
 
 
-/* Ausgabe LG */
+// Ausgabe LG
 
 if ($_GET["category"] == "lg") {
 

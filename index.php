@@ -13,6 +13,9 @@
 
 
 <br>
+
+<!-- Navigationsleiste mit Logo, Dropdown und Warenkorb-Verlinkung -->
+
 <div class="navbar">
 
     <?php
@@ -46,13 +49,15 @@
 
 <?php
 
+// Switch Case für das Routing
+
 if (isset($_GET["page"]) ) {
     switch ($_GET["page"]) {
         case "category":
             include "category/index.php";
             break;
         case "login":
-            include "login/login1.php";
+            include "login/login.php";
             break;
         case "backend":
             include "backend/index.php";
@@ -93,6 +98,9 @@ else
 
 <footer>
     <?php
+
+    // Einbinden von Footer aus externer Datei
+
     include "footer/footer.php";
     ?>
 </footer>

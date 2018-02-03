@@ -7,6 +7,9 @@
     {
         ?>
         <div>
+
+            <!-- Formular zur Ausgabe der Inhalte im Warenkorb -->
+
             <form action="./warenkorb/update.php" method="post">
                 <table>
                     <tr>
@@ -20,6 +23,8 @@
                     <?php
                     $db = new PDO($dsn, $dbuser, $dbpass);
                     foreach ($_SESSION['warenkorb'] as $key => $cart){
+
+                        // Ausgabe der Daten auf Basis der ID aus Tabelle Produkt
 
                         $stmt = $db->query("SELECT * FROM produkt WHERE id='".$cart['id']."'");
                         $result = $stmt->fetch();
@@ -43,7 +48,7 @@
             </form>
         </div>
 
-
+            <!-- Formular zum Übertragung der Daten zur Kasse -->
 
         <form action="?page=kasse&action=zurkasse" method="post">
             <input class="warenkorb" type="submit" value="Zur Kasse">

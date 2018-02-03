@@ -21,7 +21,7 @@ if (!isset($_SESSION["login"]))
     header("location:./index.php");
 }
 
-
+// Try Catch Block zum frühzeitigen erkennen von Fehlern
 
 try {
     include_once "../db/userdata.php";

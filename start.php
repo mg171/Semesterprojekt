@@ -2,6 +2,9 @@
 
 <h1 id='h1' class='bold'>Smartphone kaufen</h1><br>
 
+
+    <!-- Verlinkungen der Marken mithilfe von Routing der Index.php -->
+
 <table>
     <tr>
         <td class="home"><a href="index.php?page=category&category=apple"><img src="images/brands/apple.jpg" alt="Apple" class="img-thumbnail"></a></td>

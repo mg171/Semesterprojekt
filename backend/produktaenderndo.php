@@ -17,6 +17,8 @@ $menge = $_POST["menge"];
 $mindestbestand = $_POST["mindestbestand"];
 $eancode = $_POST["eancode"];
 
+// Prüfung falls Artikelname und Preis frei bleiben --> Fehlermeldung
+
 if (!empty($artikelname) && !empty($preis)) {
 
     try {

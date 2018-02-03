@@ -1,5 +1,8 @@
 <?php
 session_start();
+
+// Update der im Warenkorb veränderten Inhalte
+
 if (isset($_POST['anzahl']) || isset($_POST['loeschen'])) {
     if (isset($_POST['anzahl'])) {
         $catch = $_POST['menge'];

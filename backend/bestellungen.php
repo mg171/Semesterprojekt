@@ -27,6 +27,8 @@ echo '<a class="backlinks" href="./produkt.php">Zur Produktübersicht</a><br><br
 
 echo '<h1>Bestellübersicht</h1>';
 
+// Spalte Bestellnummer aus SQL-Tabelle Bestellungen wird gruppiert
+
 $db = new PDO($dsn, $dbuser, $dbpass);
 $stmt = $db->query("SELECT * FROM bestellungen GROUP BY bestellnummer");
 $stmt->execute();
@@ -41,6 +43,7 @@ echo "<tr>
                     <th><i class=\"fa fa-eye\" aria-hidden=\"true\"></i></th>
                 </tr>";
 
+// Foreach Schleife zur Ausgabe der Daten
 
 foreach ($result as $row) {
 

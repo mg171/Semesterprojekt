@@ -6,6 +6,9 @@ include_once ('db/userdata.php');
 if (isset($_SESSION['warenkorb']))
 {
     ?>
+
+    <!--  Alle Produkte aus dem Warenkorb werden nochmal aufgelistet -->
+
     <div><h1>Zusammenfassung</h1><br>
         <form action="./kasse/checkout.php" method="post">
             <table>
@@ -24,6 +27,9 @@ if (isset($_SESSION['warenkorb']))
                     $stmt = $db->query("SELECT * FROM produkt WHERE id='".$cart['id']."'");
                     $result = $stmt->fetch();
                     ?>
+
+                    <!-- Hier werden die Preise der Produkte zusammengerechnet und ausgegeben -->
+
                     <tr>
                         <td><a href="?page=product&product=show&id=<?php echo $result['id']?>">
                                 <?=$result['artikelname'];?>
@@ -38,6 +44,8 @@ if (isset($_SESSION['warenkorb']))
 
             <br><br>
 
+            <!-- Formular zur Eingabe der persönlichen Daten des Kunden -->
+
             <h3>Rechnungsdetails</h3><br>
 
             Vorname <br><input class="checkout" type='text' name="vorname" required><br><br>
@@ -49,6 +57,8 @@ if (isset($_SESSION['warenkorb']))
             Stadt <br><input type="text" name="stadt" required><br>
 
             <br><br>
+
+            <!-- Hier kann per Radio Buttons die Zahlungsart ausgewählt werden -->
 
 
             <h3>Zahlungsart wählen</h3><br>

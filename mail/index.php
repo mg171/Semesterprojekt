@@ -6,6 +6,8 @@
 <body>
 <?php
 
+// Funktion zum Senden der Bestätigungsmail
+
     $empf = $_POST["email"];
     $betreff ="Bestellbestätigung";
     $from .= "From: Handy Webshop <handy.webshop@gmail.com>\n";
@@ -16,7 +18,7 @@
               Alle Preise verstehen sich inkl. 19% Mwst. <br>
               Lieferung erfolgt binnen 3 Werktagen nach Zahlungseingang. <br>
               Wir erwarten Ihre Zahlung binnen von 10 Tagen per Überweisung oder Kreditkarte auf unser Konto. <br>
-              Überweisungen richten Sie bitte mit ihrem Namen als Verwendungszweck an <br>
+              Überweisungen richten Sie bitte mit ihrer Bestellungen als Verwendungszweck an <br>
               <br>
               Bank: HdM-Bank <br>
               IBAN: DE12345678765432 <br>

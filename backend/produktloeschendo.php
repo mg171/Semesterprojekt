@@ -12,6 +12,8 @@ $id=$_GET["id"];
 
 include_once ('../db/userdata.php');
 
+// SQL-Delete Statement
+
 $db = new PDO($dsn, $dbuser, $dbpass);
 
 $stmt = $db->query("DELETE FROM produkt WHERE id=" . $id);

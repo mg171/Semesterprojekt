@@ -1,4 +1,7 @@
 <?php
+
+// Switch Case für das Routing
+
 if (isset($_GET["product"]))
 {
     switch ($_GET["product"]) {

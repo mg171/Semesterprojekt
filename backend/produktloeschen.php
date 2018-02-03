@@ -25,6 +25,9 @@ $id=$_GET ["id"];
 
 include_once ('../db/userdata.php');
 
+// Spalte ID aus Tabelle Produkt herausziehen und Produkt mit übereinstimmender ID wird angezeigt
+// Später Löschung über Sicherheitsabfrage
+
 $db = new PDO($dsn, $dbuser, $dbpass);
 $stmt = $db->query("SELECT * FROM produkt WHERE id=" . $id);
 $stmt->execute();

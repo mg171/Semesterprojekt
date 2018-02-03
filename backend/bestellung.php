@@ -21,6 +21,8 @@ if (!isset($_SESSION["login"]))
     header("location:./index.php");
 }
 
+// Userdata eingebunden
+
 include ('../db/userdata.php');
 
 echo '<a href="./bestellungen.php">Zurück zur Bestellübersicht</a><br><br><br>';
@@ -29,6 +31,7 @@ $bestellnr = $_GET['bestellnummer'];
 
 echo '<h1>Übersicht der Bestellung mit der Bestellnummer '. $bestellnr . '</h1><br>';
 
+// Inhalte aus DB selektiert
 
 $db = new PDO($dsn, $dbuser, $dbpass);
 $stmt = $db->query("SELECT * FROM bestellungen WHERE bestellnummer=$bestellnr");
@@ -50,6 +53,8 @@ echo "<tr>
                     <th>Anzahl</th>
                 </tr>";
 
+
+// Foreach Schleife zur Ausgabe der Daten
 
 foreach ($result as $row) {
 
