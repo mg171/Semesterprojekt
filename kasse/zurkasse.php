@@ -67,8 +67,6 @@ if (isset($_SESSION['warenkorb']))
             <h3>Zahlungsart wählen</h3><br>
             <input type="radio" id="nn" name="zahlmethode" value="Rechnung" required>
             <label for="mc"> Rechnung</label><br>
-            <input type="radio" id="nn" name="zahlmethode" value="Kreditkarte" required>
-            <label for="kk"> Kreditkarte</label>
 
             <br><br><br>
 

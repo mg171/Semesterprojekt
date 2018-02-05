@@ -27,6 +27,8 @@ echo '<a class="backlinks" href="index.php?page=backend&action=produktneu">Neues
 
 echo '<a class="backlinks" href="index.php?page=backend&action=bestellungen">Bestellungen ansehen</a><br><br>';
 
+echo '<a class="backlinks" href="../index.php?page=logout&action=logout">Logout</a>';
+
 echo '<h1>Produktübersicht</h1>';
 
 // Alle Daten aus der SQL-Tabelle Produkte ziehen um sie in einer Tabelle im Backend auszugeben
